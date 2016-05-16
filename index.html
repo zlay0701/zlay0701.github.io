@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body onLoad="changeRange(0);">
+<canvas id="can1" width="400" height="400">
+您的浏览器版本太低
+</canvas>
+<form id="form"></form>
+<input type="range" id="r1" name="r1" form="form" min="0" max="100" value="0" oninput="changeRange(this.value);"/>
+<output form="form" name="op1" id="op1">0</output>
+<script language="javascript" type="text/javascript">
+function changeRange(v){
+	document.getElementById("op1").value = v;
+	drawCanvas(v);
+	}
+var color1 = "#339933";
+var color2 = "#66CC66";
+function drawCanvas(v){
+	var canvas = document.getElementById("can1");
+	var ctx = canvas.getContext("2d");
+	ctx.fillStyle="#99CCFF";
+	ctx.fillRect(0,0,400,400);
+	
+	ctx.beginPath();
+	ctx.fillStyle=color2;
+	ctx.arc(200,200,150,Math.PI*0.5,Math.PI*2.5,false);
+	ctx.fill();
+	ctx.closePath();
+	
+	ctx.beginPath();
+	if(v==100){
+ctx.arc(200,200,150,Math.PI*0.5,Math.PI*2.5,false);
+		}else{
+ctx.arc(200,200,150,Math.PI*(0.5+v/100),Math.PI*(2.5-v/100),false);
+			}
+	ctx.fillStyle=color1;
+	ctx.fill();
+	ctx.closePath();
+	
+	//文字
+	ctx.beginPath();
+	ctx.fillStyle="#FFFFFF";
+	ctx.font="Bold 30px sans-serif";
+	var x = 0;
+	if(v==100){
+			x = 40
+		}else if(v<=99 && v>=10){
+			x = 30;
+			}else{
+				x = 20;
+				}
+	ctx.fillText(v+"%",200-x,200);
+	}
+</script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Longtimenosee��Blog</title>
-  <subtitle>��������Ŭ��,���ܿ�������������</subtitle>
+  <title>Longtimenosee’Blog</title>
+  <subtitle>你必须很努力,才能看起来毫不费力</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.longtimenosee.cc/"/>
-  <updated>2016-05-19T01:46:55.135Z</updated>
+  <updated>2016-05-19T03:21:24.038Z</updated>
   <id>http://www.longtimenosee.cc/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好久不见2</title>
+    <link href="http://www.longtimenosee.cc//blog/2016/05/%E5%A5%BD%E4%B9%85%E4%B8%8D%E8%A7%812.html"/>
+    <id>http://www.longtimenosee.cc//blog/2016/05/好久不见2.html</id>
+    <published>2016-05-19T03:13:58.000Z</published>
+    <updated>2016-05-19T03:21:24.038Z</updated>
+    
+    <content type="html">&lt;p&gt;测试内容&lt;br&gt;    &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;测试代码&lt;span class=&quot;function&quot;&gt;dsiohfjsiuhfiushf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sfdhasdfhoisf&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;title&quot;&gt;sdafijhfhasf&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;测试内容&lt;br&gt;    &lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;
+    
+    </summary>
+    
+      <category term="测试分类" scheme="http://www.longtimenosee.cc/categories/%E6%B5%8B%E8%AF%95%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="测试标签" scheme="http://www.longtimenosee.cc/tags/%E6%B5%8B%E8%AF%95%E6%A0%87%E7%AD%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

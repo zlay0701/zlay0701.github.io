@@ -1663,7 +1663,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a1c1d0;
+  background: #7d000d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2543,9 +2543,9 @@ hr {
 body {
   background: url("http://i.imgur.com/L4Vs9K3.png");
 }
-header {
+#header {
   background: url("http://i.imgur.com/L4Vs9K3.png");
 }
-footer {
+#footer {
   background: url("http://i.imgur.com/L4Vs9K3.png");
 }

@@ -470,7 +470,7 @@
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
-<div class="theme-info">
+<div class="theme-info" onload="browserRedirect()"> 
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
@@ -488,12 +488,36 @@
   		
  
   
-<audio  loop autoplay>您的浏览器不支持audio标签,音乐无法播放
-<source src="/blog/2016/05/2016-05-18-hello-world/1.mp3"></source>
+<audio id="audio_zlay" loop autoplay src="/blog/2016/05/2016-05-18-hello-world/1.mp3">
+您的浏览器不支持audio标签,音乐无法播放
 </audio>
 
   			
-
+<script>
+function browserRedirect() {
+		
+		var audio = document.getElementById("audio_zlay");
+		var src = document.getElementById("audio_zlay").src;
+		
+    var sUserAgent = navigator.userAgent.toLowerCase();
+    var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+    var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+    var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+    var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+    var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+    var bIsAndroid = sUserAgent.match(/android/i) == "android";
+    var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+    var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+    if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
+       
+    } else {
+    		alert(3);
+        document.getElementById("audio_zlay").src = "";
+        audio.pause();
+    }
+}
+browserRedirect(); 
+</script>
         
 
         

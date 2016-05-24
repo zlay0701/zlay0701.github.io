@@ -711,10 +711,12 @@
   &nbsp;&nbsp;|&nbsp;&nbsp;<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
   
   &nbsp;&nbsp;|&nbsp;&nbsp;<span>音乐 - </span><a  target="_blank" href="http://music.163.com/#/song?id=185815"> 周杰伦 - 蒲公英的约定</a>
+  &nbsp;&nbsp;|&nbsp;&nbsp;<span><input type="button" id="input_zlay" onclick="abc();" value="暂停"/></span>
+  
   
 </div>
 
-<audio id="audio_zlay" loop autoplay src="/blog/2016/05/2016-05-18-hello-world/1.mp3">您的浏览器不支持audio标签,音乐无法播放</audio>
+<audio id="audio_zlay" loop autoplay src="/blog/2016/05/2016-05-18-hello-world/music.mp3">您的浏览器不支持audio标签,音乐无法播放</audio>
 		
 <script>
 function browserRedirect() {
@@ -740,6 +742,21 @@ function browserRedirect() {
     }
 }
 browserRedirect(); 
+</script>
+
+<script>
+function abc() {
+  	var audio = document.getElementById("audio_zlay");
+		var value = document.getElementById("input_zlay").value;
+		if(value=="暂停"){
+		audio.pause();
+		document.getElementById("input_zlay").value = "播放"
+		}else{
+		audio.play();
+		document.getElementById("input_zlay").value = "暂停"
+		}
+}
+
 </script>
 
 

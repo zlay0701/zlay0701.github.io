@@ -469,35 +469,32 @@
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
-<div class="theme-info" onload="browserRedirect()"> 
+<div class="theme-info" onload="browserRedirect();"> 
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Mist
   </a>
   
-       <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   &nbsp;&nbsp;|&nbsp;&nbsp;<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
   
   &nbsp;&nbsp;|&nbsp;&nbsp;<span>音乐 - </span><a  href="http://music.163.com/#/song?id=185815"> 周杰伦 - 蒲公英的约定</a>
   
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="###" target="_blank" id="a_zlay" onclick="contralAudio();">暂停</a>
  
 </div>
 
- 
-  		
- 
-  
 <audio id="audio_zlay" loop autoplay src="/blog/2016/05/2016-05-18-hello-world/1.mp3">
 您的浏览器不支持audio标签,音乐无法播放
 </audio>
-
-  			
-<script>
-function browserRedirect() {
 		
+<script>
+function browserRedirect(){
+		alert("test");
 		var audio = document.getElementById("audio_zlay");
 		var src = document.getElementById("audio_zlay").src;
-		
+	
     var sUserAgent = navigator.userAgent.toLowerCase();
     var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
     var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
@@ -508,15 +505,18 @@ function browserRedirect() {
     var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
     if (!(bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) ){
-       
+   	alert(123);
     } else {
-    		alert(3);
+    		alert("本站点暂不支持手机端的背景音乐播放");
         document.getElementById("audio_zlay").src = "";
         audio.pause();
     }
 }
-browserRedirect(); 
+}
+browserRedirect();  
 </script>
+
+
         
 
         

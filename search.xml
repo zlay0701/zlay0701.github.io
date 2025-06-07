@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>好久不见,味素</title>
+    <url>//p/2016-05-19-longtimenosee/</url>
+    <content><![CDATA[<blockquote>
+<p>一部电影，一句动人台词# 我喜欢你在71华氏度的气温里还会感冒  我喜欢你要花上半个小时点三明治  我喜欢你现在皱着眉头 像看一个疯子似的看着我  我喜欢一整天呆在你的身边后 我的衣服上能问到你的香水味  我喜欢你是我每天如睡前最后一个想要讲话的人</p>
+</blockquote>
+<span id="more"></span>
+<hr>
+<blockquote>
+<p><strong>#一部电影，一句动人台词# 路小雨在琴房（不是旧琴房），看着墙壁上的相片说，肖邦和他最爱的女人。叶湘伦：还不是十年就分开了。路小雨：但是能够拥有，十年已经很长了。</strong></p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>#一部电影，一句动人台词# 黎耀辉，不如我哋由头从嚟过。</strong></p>
+</blockquote>
+<hr>
+<blockquote>
+<p><strong>#一部电影，一句动人台词# 不管我怎样的努力，心与心之间也不会靠近一厘米。—《极速五厘米》</strong></p>
+<img src="/p/2016-05-19-longtimenosee/2016-05-19-longtimenosee_1.jpg" class=""></blockquote>
+<blockquote>
+<img src="/p/2016-05-19-longtimenosee/2016-05-19-longtimenosee_2.jpg" class=""></blockquote>
+<blockquote>
+<img src="/p/2016-05-19-longtimenosee/2016-05-19-longtimenosee_3.jpg" class=""></blockquote>
+<blockquote>
+<p>转自: <a href="http://music.163.com/#/activity/3591050?userid=39785770" title="网易云音乐">网易云音乐</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>字符编码笔记：ASCII，Unicode和UTF-8</title>
+    <url>//p/2016-05-23-ascii-unicode-utf-8/</url>
+    <content><![CDATA[<h3 id="1-ASCII码"><a href="#1-ASCII码" class="headerlink" title="1. ASCII码"></a>1. ASCII码</h3><p>我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从0000000到11111111。</p>
+<span id="more"></span>
+<p>上个世纪60年代，美国制定了一套字符编码，对英语字符与二进制位之间的关系，做了统一规定。这被称为ASCII码，一直沿用至今。<br>ASCII码一共规定了128个字符的编码，比如空格”SPACE”是32（二进制00100000），大写的字母A是65（二进制01000001）。这128个符号（包括32个不能打印出来的控制符号），只占用了一个字节的后面7位，最前面的1位统一规定为0。</p>
+<h3 id="2、非ASCII编码"><a href="#2、非ASCII编码" class="headerlink" title="2、非ASCII编码"></a>2、非ASCII编码</h3><p>英语用128个符号编码就够了，但是用来表示其他语言，128个符号是不够的。比如，在法语中，字母上方有注音符号，它就无法用ASCII码表示。于是，一些欧洲国家就决定，利用字节中闲置的最高位编入新的符号。比如，法语中的é的编码为130（二进制10000010）。这样一来，这些欧洲国家使用的编码体系，可以表示最多256个符号。<br>但是，这里又出现了新的问题。不同的国家有不同的字母，因此，哪怕它们都使用256个符号的编码方式，代表的字母却不一样。比如，130在法语编码中代表了é，在希伯来语编码中却代表了字母Gimel (ג)，在俄语编码中又会代表另一个符号。但是不管怎样，所有这些编码方式中，0–127表示的符号是一样的，不一样的只是128–255的这一段。<br>至于亚洲国家的文字，使用的符号就更多了，汉字就多达10万左右。一个字节只能表示256种符号，肯定是不够的，就必须使用多个字节表达一个符号。比如，简体中文常见的编码方式是GB2312，使用两个字节表示一个汉字，所以理论上最多可以表示256x256&#x3D;65536个符号。<br>中文编码的问题需要专文讨论，这篇笔记不涉及。这里只指出，虽然都是用多个字节表示一个符号，但是GB类的汉字编码与后文的Unicode和UTF-8是毫无关系的。</p>
+<h3 id="3-Unicode"><a href="#3-Unicode" class="headerlink" title="3.Unicode"></a>3.Unicode</h3><p>正如上一节所说，世界上存在着多种编码方式，同一个二进制数字可以被解释成不同的符号。因此，要想打开一个文本文件，就必须知道它的编码方式，否则用错误的编码方式解读，就会出现乱码。为什么电子邮件常常出现乱码？就是因为发信人和收信人使用的编码方式不一样。<br>可以想象，如果有一种编码，将世界上所有的符号都纳入其中。每一个符号都给予一个独一无二的编码，那么乱码问题就会消失。这就是Unicode，就像它的名字都表示的，这是一种所有符号的编码。<br>Unicode当然是一个很大的集合，现在的规模可以容纳100多万个符号。每个符号的编码都不一样，比如，U+0639表示阿拉伯字母Ain，U+0041表示英语的大写字母A，U+4E25表示汉字”严”。具体的符号对应表，可以查询<a href="http://www.unicode.org/" title="unicode.org&#x2F;">unicode.org</a>，或者专门的<a href="http://www.chi2ko.com/tool/CJK.htm">汉字对应表</a>。</p>
+<h3 id="4-Unicode的问题"><a href="#4-Unicode的问题" class="headerlink" title="4. Unicode的问题"></a>4. Unicode的问题</h3><p>需要注意的是，Unicode只是一个符号集，它只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。<br>比如，汉字”严”的unicode是十六进制数4E25，转换成二进制数足足有15位（100111000100101），也就是说这个符号的表示至少需要2个字节。表示其他更大的符号，可能需要3个字节或者4个字节，甚至更多。<br>这里就有两个严重的问题，第一个问题是，如何才能区别Unicode和ASCII？计算机怎么知道三个字节表示一个符号，而不是分别表示三个符号呢？第二个问题是，我们已经知道，英文字母只用一个字节表示就够了，如果Unicode统一规定，每个符号用三个或四个字节表示，那么每个英文字母前都必然有二到三个字节是0，这对于存储来说是极大的浪费，文本文件的大小会因此大出二三倍，这是无法接受的。<br>它们造成的结果是：1）出现了Unicode的多种存储方式，也就是说有许多种不同的二进制格式，可以用来表示Unicode。2）Unicode在很长一段时间内无法推广，直到互联网的出现。</p>
+<h3 id="5-UTF-8"><a href="#5-UTF-8" class="headerlink" title="5.UTF-8"></a>5.UTF-8</h3><p>互联网的普及，强烈要求出现一种统一的编码方式。UTF-8就是在互联网上使用最广的一种Unicode的实现方式。其他实现方式还包括UTF-16（字符用两个字节或四个字节表示）和UTF-32（字符用四个字节表示），不过在互联网上基本不用。<strong>重复一遍，这里的关系是，UTF-8是Unicode的实现方式之一。</strong><br>UTF-8最大的一个特点，就是它是一种变长的编码方式。它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度。<br>UTF-8的编码规则很简单，只有二条：</p>
+<ul>
+<li><p>1）对于单字节的符号，字节的第一位设为0，后面7位为这个符号的unicode码。因此对于英语字母，UTF-8编码和ASCII码是相同的。</p>
+</li>
+<li><p>2）对于n字节的符号（n&gt;1），第一个字节的前n位都设为1，第n+1位设为0，后面字节的前两位一律设为10。剩下的没有提及的二进制位，全部为这个符号的unicode码。</p>
+</li>
+</ul>
+<p>下表总结了编码规则，字母x表示可用编码的位。</p>
+<img src="/p/2016-05-23-ascii-unicode-utf-8/2016-05-23-ASCII-Unicode-UTF-8_1.jpg" class=""> 
+<p>跟据上表，解读UTF-8编码非常简单。如果一个字节的第一位是0，则这个字节单独就是一个字符；如果第一位是1，则连续有多少个1，就表示当前字符占用多少个字节。<br>下面，还是以汉字”严”为例，演示如何实现UTF-8编码。<br>已知”严”的unicode是4E25（100111000100101），根据上表，可以发现4E25处在第三行的范围内（0000 0800-0000 FFFF），因此”严”的UTF-8编码需要三个字节，即格式是”1110xxxx 10xxxxxx 10xxxxxx”。然后，从”严”的最后一个二进制位开始，依次从后向前填入格式中的x，多出的位补0。这样就得到了，”严”的UTF-8编码是”11100100 10111000 10100101”，转换成十六进制就是E4B8A5。</p>
+<h3 id="6-Unicode与UTF-8之间的转换"><a href="#6-Unicode与UTF-8之间的转换" class="headerlink" title="6. Unicode与UTF-8之间的转换"></a>6. Unicode与UTF-8之间的转换</h3><p>通过上一节的例子，可以看到”严”的Unicode码是4E25，UTF-8编码是E4B8A5，两者是不一样的。它们之间的转换可以通过程序实现。<br>在Windows平台下，有一个最简单的转化方法，就是使用内置的记事本小程序Notepad.exe。打开文件后，点击”文件”菜单中的”另存为”命令，会跳出一个对话框，在最底部有一个”编码”的下拉条。</p>
+<img src="/p/2016-05-23-ascii-unicode-utf-8/2016-05-23-ASCII-Unicode-UTF-8_2.jpg" class=""> 
+<p>里面有四个选项：ANSI，Unicode，Unicode big endian 和 UTF-8。</p>
+<ul>
+<li><p>1）ANSI是默认的编码方式。对于英文文件是ASCII编码，对于简体中文文件是GB2312编码（只针对Windows简体中文版，如果是繁体中文版会采用Big5码）。</p>
+</li>
+<li><p>2）Unicode编码指的是UCS-2编码方式，即直接用两个字节存入字符的Unicode码。这个选项用的little endian格式。</p>
+</li>
+<li><p>3）Unicode big endian编码与上一个选项相对应。我在下一节会解释little endian和big endian的涵义。</p>
+</li>
+<li><p>4）UTF-8编码，也就是上一节谈到的编码方法。</p>
+</li>
+</ul>
+<p>选择完”编码方式”后，点击”保存”按钮，文件的编码方式就立刻转换好了。</p>
+<h3 id="7-Little-endian和Big-endian"><a href="#7-Little-endian和Big-endian" class="headerlink" title="7. Little endian和Big endian"></a>7. Little endian和Big endian</h3><p>上一节已经提到，Unicode码可以采用UCS-2格式直接存储。以汉字”严”为例，Unicode码是4E25，需要用两个字节存储，一个字节是4E，另一个字节是25。存储的时候，4E在前，25在后，就是Big endian方式；25在前，4E在后，就是Little endian方式。<br>这两个古怪的名称来自英国作家斯威夫特的《格列佛游记》。在该书中，小人国里爆发了内战，战争起因是人们争论，吃鸡蛋时究竟是从大头(Big-Endian)敲开还是从小头(Little-Endian)敲开。为了这件事情，前后爆发了六次战争，一个皇帝送了命，另一个皇帝丢了王位。<br>因此，第一个字节在前，就是”大头方式”（Big endian），第二个字节在前就是”小头方式”（Little endian）。<br>那么很自然的，就会出现一个问题：计算机怎么知道某一个文件到底采用哪一种方式编码？<br>Unicode规范中定义，每一个文件的最前面分别加入一个表示编码顺序的字符，这个字符的名字叫做”零宽度非换行空格”（ZERO WIDTH NO-BREAK SPACE），用FEFF表示。这正好是两个字节，而且FF比FE大1。<br>如果一个文本文件的头两个字节是FE FF，就表示该文件采用大头方式；如果头两个字节是FF FE，就表示该文件采用小头方式。</p>
+<h3 id="8-实例"><a href="#8-实例" class="headerlink" title="8. 实例"></a>8. 实例</h3><p>下面，举一个实例。<br>打开”记事本”程序Notepad.exe，新建一个文本文件，内容就是一个”严”字，依次采用ANSI，Unicode，Unicode big endian 和 UTF-8编码方式保存。<br>然后，用文本编辑软件<a href="http://www.google.cn/search?aq=t&oq=UltraEdit&complete=1&hl=zh-CN&newwindow=1&rlz=1B3GGGL_zh-CNCN216CN216&q=ultraedit+%E4%B8%8B%E8%BD%BD&btnG=Google+%E6%90%9C%E7%B4%A2&meta=">UltraEdit</a>中的”十六进制功能”，观察该文件的内部编码方式。</p>
+<ul>
+<li><p>1）ANSI：文件的编码就是两个字节”D1 CF”，这正是”严”的GB2312编码，这也暗示GB2312是采用大头方式存储的。</p>
+</li>
+<li><p>2）Unicode：编码是四个字节”FF FE 25 4E”，其中”FF FE”表明是小头方式存储，真正的编码是4E25。</p>
+</li>
+<li><p>3）Unicode big endian：编码是四个字节”FE FF 4E 25”，其中”FE FF”表明是大头方式存储。</p>
+</li>
+<li><p>4）UTF-8：编码是六个字节”EF BB BF E4 B8 A5”，前三个字节”EF BB BF”表示这是UTF-8编码，后三个”E4B8A5”就是”严”的具体编码，它的存储顺序与编码顺序是一致的。</p>
+</li>
+</ul>
+<h3 id="9-延伸阅读"><a href="#9-延伸阅读" class="headerlink" title="9. 延伸阅读"></a>9. 延伸阅读</h3><ul>
+<li><a href="http://www.joelonsoftware.com/articles/Unicode.html">The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets（关于字符集的最基本知识）</a></li>
+<li><a href="http://www.pconline.com.cn/pcedu/empolder/gj/other/0505/616631.html">谈谈Unicode编码</a></li>
+<li><a href="http://www.ietf.org/rfc/rfc3629.txt">RFC3629：UTF-8, a transformation format of ISO 10646（如果实现UTF-8的规定）</a><br>（完）</li>
+</ul>
+<blockquote>
+<p>转载自 :<a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" title="字符编码笔记：ASCII，Unicode和UTF-8">字符编码笔记：ASCII，Unicode和UTF-8</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>字符编码</category>
+      </categories>
+      <tags>
+        <tag>Unicode</tag>
+        <tag>ASCII</tag>
+        <tag>UTF-8</tag>
+        <tag>字符编码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UltraEdit的配置</title>
+    <url>//p/2016-05-25-set-ultraedit/</url>
+    <content><![CDATA[<h3 id="1-解决-禁止自动生成同名bak文件"><a href="#1-解决-禁止自动生成同名bak文件" class="headerlink" title="1.解决:禁止自动生成同名bak文件"></a>1.解决:禁止自动生成同名bak文件</h3><span id="more"></span>
+<img src="/p/2016-05-25-set-ultraedit/UltraEdit%E9%85%8D%E7%BD%AE_1.png" class="">
+
+
+
+<h3 id="2-解决-禁止总是提醒”希望转换file到dos格式吗”"><a href="#2-解决-禁止总是提醒”希望转换file到dos格式吗”" class="headerlink" title="2.解决:禁止总是提醒”希望转换file到dos格式吗”"></a>2.解决:禁止总是提醒”希望转换file到dos格式吗”</h3><img src="/p/2016-05-25-set-ultraedit/UltraEdit%E9%85%8D%E7%BD%AE_2.png" class="">]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>UltraEdit</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>技术类博客网站推荐</title>
+    <url>//p/2016-05-26-blog-recommended/</url>
+    <content><![CDATA[<p>首先呢，就是推荐技术类网站</p>
+<span id="more"></span>
+<p>CSDN<br>51CTO<br>itEye<br>cnBlogs<br>BlogJava<br>BlogRead<br>ChinaUnix<br>Github<br>OSCHINA（oschina）<br>ITPUB(itpub)<br>精华网站：<br>伯乐在线<br>ImportNew<br>Segmentfault<br>InfoQ<br>V2EX<br>互联网网站团队博客：<br>业界大牛的个人博客推荐：<br>互联网，科技博客推荐<br>国内科技博客：<br>本文参考来自，更多详细请参考：</p>
+<blockquote>
+<p>转载自:<a href="http://my.oschina.net/wxfvm/blog/350232">技术类博客网站推荐</a></p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>博客推荐</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MyEclipse 异常 Subversion Native Library Not Available解决方案</title>
+    <url>//p/2016-07-03-subversion-native-library-not-available/</url>
+    <content><![CDATA[<p>摘要</p>
+<span id="more"></span>
+<p>Windows&#x3D;&gt;</p>
+<img src="/p/2016-07-03-subversion-native-library-not-available/2016-07-03-Subversion-Native-Library-Not-Available1.png" class=""> 
+<p><a href="http://blog.csdn.net/zp357252539/article/details/44880319">http://blog.csdn.net/zp357252539/article/details/44880319</a></p>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>MyEclipse</tag>
+        <tag>SVN</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MyEclipse2015 Stable 2.0下载+破解+优化+插件安装教程</title>
+    <url>//p/2016-08-18-myeclipse-crack/</url>
+    <content><![CDATA[<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面:"></a>写在前面:</h2><p>MyEclipse2015下载可以到MyEclipse中文网,下载官方安装包.<br>本教程适用于Windows系统.<br>鉴于MyEclipse2016处于开发测试期也许不稳定,本人推荐使用MyEclipse2015 S2,MyEclipse2015 S3本人测试无法完美破解,会闪退如有谁解决欢迎联系.<br><a href="http://www.myeclipsecn.com/download/">MyEclipse中文网:http://www.myeclipsecn.com/download/</a></p>
+<span id="more"></span>
+
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack1.png" class="">
+<!--more-->
+
+<hr>
+<h2 id="MyEclipse安装包-破解工具-破解教程下载地址"><a href="#MyEclipse安装包-破解工具-破解教程下载地址" class="headerlink" title="MyEclipse安装包+破解工具+破解教程下载地址:"></a>MyEclipse安装包+破解工具+破解教程下载地址:</h2><p>推荐百度云链接：<a href="http://pan.baidu.com/s/1kVNfxZp">http://pan.baidu.com/s/1kVNfxZp</a> 密码：1woj<br>推荐360云链接 : <a href="https://yunpan.cn/cMyYvRhRnYtQD">https://yunpan.cn/cMyYvRhRnYtQD</a>  访问密码 716e<br>官网链接(只有安装包):<a href="http://pan.baidu.com/s/1nvOwzB7">http://pan.baidu.com/s/1nvOwzB7</a> 密码: zvuv</p>
+<hr>
+<h2 id="安装破解教程"><a href="#安装破解教程" class="headerlink" title="安装破解教程:"></a>安装破解教程:</h2><ol>
+<li>安装MyEclipse之后切记不要打开.安装目录不要有中文和空格</li>
+<li>打开myeclipse2015_keygen下的crack.bat,Usercode需要自己填写，这个随意</li>
+<li>然后SystemId需要点击按键生成——这个如果提示 Cannot find JNIWrapper native library (jniwrap.dll) in java.library.path:<br> 这样的错误，不要紧，再点一下应该就出来了，还是没有的话请注意权限问题（主要是Mac和Linux）</li>
+<li>工作空间需要用新的，不要用旧版本的了——如果你是Stable1.0破解过，正常用的工作空间也可以</li>
+<li>推荐选择Bling版本,最强大版本</li>
+<li>在算号器填好Usercode，并生成了SystemId后，点Active</li>
+<li>在Tools点SaveProperites把注册码保存到文件</li>
+<li>把补丁包（patch）里的plugins复制到MyEclipse的plugins覆盖原文件</li>
+<li>最后一步，MyEclipse的安装目录下:<br>\plugins\com.genuitec.eclipse.mobile.phonegap.core_13.0.0.me201504281437\bin\com\genuitec\eclipse\mobile\phonegap\core\internal<br>和\plugins\com.genuitec.eclipse.mobile.phonegap.core_13.0.0.me201504281437\com\genuitec\eclipse\mobile\phonegap\core\internal两个目录下的都要删除</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack2.png" class="">
+<p>一共4个内部类，<strong>注意,带$符号的</strong>,切记一定要删掉<br>10. 破解完成,可以使用了.有问题请留言.</p>
+<h2 id="MyEclipse优化"><a href="#MyEclipse优化" class="headerlink" title="MyEclipse优化"></a>MyEclipse优化</h2><ol>
+<li>建议新建一个工作空间,路径不要有中文和空格.</li>
+<li>更改代码字体,推荐Inconsolata字体,系统自带字体太累眼睛<br> 最适合程序员编程的10款字体和简介下载地址:<br> 链接：<a href="http://pan.baidu.com/s/1hr9yfqO">http://pan.baidu.com/s/1hr9yfqO</a> 密码：krpd<br> <a href="http://www.iplaysoft.com/top10-programming-fonts.html">在线简介:http://www.iplaysoft.com/top10-programming-fonts.html</a> <img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack3.png" class=""></li>
+<li>Tomcat安装:推荐在官网下载绿色版Tomcat压缩包,解压就可以使用</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack4.png" class="">
+<ol start="4">
+<li>关于汉化,虽然网上有汉化包,但是个人不建议汉化,毕竟选择了编程.</li>
+<li>更改JSP页面默认编码为UTF-8</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack5.png" class="">
+<ol start="6">
+<li>更改MyEclipse编码格式为UTF-8,默认为GBK<br>设置文件编码<br>1.点击Window-&gt;preferences，在左边树菜单中，选择General-&gt;Content Types-&gt;Text，点击text显示下拉树列表<br>2.修改Java Properties File、JavaScript、JSP为UTF-8格式，这儿要注意：修改完一项之后，一定要点击右边的 update 按钮，要不然没更新<br>3.在左边树菜单中选择Myeclipse-&gt;Files and Editors，分别点击以下菜单HTML、JSP、JavaScript、修改各自的Encoding为UTF-8，点击Apply应用<br><a href="http://blog.csdn.net/u013428259/article/details/51376713">http://blog.csdn.net/u013428259/article/details/51376713</a></li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack6.png" class="">
+<ol start="7">
+<li>安装额外的JDK<br>紧接着，在Window –&gt; Preferences –&gt; Java –&gt; Compiler<br>选择JDK编译器级别为1.8，点击Apply。</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack7.png" class="">
+<ol start="8">
+<li>取消MyEclipse在启动时自动验证项目配置文件<br>默认情况下MyEclipse在启动的时候会自动验证每个项目的配置文件，这是一个非常耗时的过程，可以在Preferences窗口依次选择 MyEclipse - Validation，然后在右侧的Validator列表中只保留 Manual 项就可以了。如果需要验证的时候只需要选中文件，然后右键选择 MyEclipse - Run Validation就可以了。把除了manual 下面的全部点掉，build下只留 classpath dependency Validator<br>手工验证方法：<br>在要验证的文件上，单击鼠标右键–&gt;myeclipse–&gt;run validation<br>除XML和JSF外，其它的都可以不选。<br>点击Apply按钮，会弹出Validation Settings Changed提示。<br>可以把所有Build部分的钩取消掉。</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack8.png" class="">
+<ol start="9">
+<li>拼写检查会给我们带来不少的麻烦，我们的方法命名都会是单词的缩写，他也会提示有错，所以最好去掉，没有多大的用处</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack9.png" class="">
+<ol start="10">
+<li>myeclipse 打开 jsp 的默认编辑器不好，会同时打开预览,把默认改成 MyEclipse JSP Editor.<br>考虑到性能，通常如下设置：<br><em>.htm，</em>.html设置为MyEclipse HTML Editor (locked by‘HTML’ content type)<br>*.jsp 设置MyEclipse JSP Editor (locked by‘CSS JSP’ content type)<br>*.xml 设置为MyEclipse XML Editor (locked by‘XML’ content type)<br>设置方法为点击相应的格式，在下面的列表中选择相应编集器名称，然后点击default即可</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack10.png" class="">
+<ol start="11">
+<li>禁用myeclipse updating indexes<br>MyEclipse 总是不停的在 Update index，研究发现Update index…是Maven在下载更新，但很是影响myeclipse的使用速度.禁用办法如下：Window &#x3D;&gt; Preferences &#x3D;&gt; Myeclipse  &#x3D;&gt; Maven4Myeclipse &#x3D;&gt; Maven&#x3D;&gt;取消勾选的Download repository index updates on startup且Maven JDK也选择JDK8。</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack11.png" class="">
+<ol start="12">
+<li>去除不需要加载的模块<br>一个系统20%的功能往往能够满足80%的需求，MyEclipse也不例外，我们在大多数时候只需要20%的系统功能，所以可以将一些不使用的模块禁止加载启动。通过Windows - Preferences打开配置窗口，依次选择左侧的General - Startup and Shutdown，这个时候在右侧就显示出了Eclipse启动时加载的模块，可以根据自己的实际情况去除一些模块。<br>windows–&gt;perferences–&gt;general–&gt;startup and shutdown<br>关掉没用的启动项：<br>怎样才能知道哪些启动项有用呢？我现在把我知道的启动项用处说一下，还有很多不懂的，希望大家懂的回复在下面啊：WTP ：一个跟myeclipse差不多的东西，主要差别是 WTP 是免费的，如果使用myeclipse，这个可以取消Mylyn：组队任务管理工具，类似于 CVS ，以任务为单位管理项目进度，没用到的可以取消Derby：一种保存成 jar 形式的数据库，我没用到，取消一大排以 MyEclipse EASIE 打头的启动项：myeclipse 支持的服务器，只选自己用的，其他取消，比如我只选了tomcat<br>可以关掉的启动项有：<br>JSF辅助开发插件<br>1）ICEfaces Integration for MyEclipse；<br>2）JSF Editor Preview Support for MyEclipse；<br>交付相关的插件<br>3）Delivery Runtime JRE<br>4）Delivery Package Runtime UI等3个<br>5）m2e Marketplace；<br>6）Mylyn Tasks UI和Mylyn Team UI；<br>关闭自动更新<br>7）Equinox Provisioning Platform Automatic Update Support<br>取消下列项：<br>MyEclipse QuickSetup<br>MyEclipse Deby<br>MyEclipse EASIE开头的，只保留你使用的tomcat 5或6或7<br>MyEclipse examples<br>WTP Webservice UI plug-in<br>Automatic update scheduler<br>然后点击Apply</li>
+</ol>
+<img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack12.png" class="">
+<ol start="13">
+<li>新建JSP模板<br><a href="http://bsr1983.iteye.com/blog/1825808">http://bsr1983.iteye.com/blog/1825808</a><br>我的JSP模板代码如下.</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">&lt;%@ page contentType=<span class="string">&quot;text/html; charset=utf-8&quot;</span> language=<span class="string">&quot;java&quot;</span> <span class="keyword">import</span>=<span class="string">&quot;java.util.*,java.sql.*&quot;</span> errorPage=<span class="string">&quot;&quot;</span> pageEncoding=<span class="string">&quot;UTF-8&quot;</span>%&gt;</span><br><span class="line">&lt;%</span><br><span class="line"><span class="type">String</span> <span class="variable">path</span> <span class="operator">=</span> request.getContextPath();</span><br><span class="line"><span class="type">String</span> <span class="variable">basePath</span> <span class="operator">=</span> request.getScheme()+<span class="string">&quot;://&quot;</span>+request.getServerName()+<span class="string">&quot;:&quot;</span>+request.getServerPort()+path+<span class="string">&quot;/&quot;</span>;</span><br><span class="line">%&gt;</span><br><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">	 &lt;meta charset=<span class="string">&quot;utf-8&quot;</span>&gt;</span><br><span class="line">	 &lt;base href=<span class="string">&quot;&lt;%=basePath%&gt;&quot;</span>&gt;</span><br><span class="line">	</span><br><span class="line">	 &lt;title&gt;My JSP&lt;/title&gt;</span><br><span class="line">	 &lt;meta http-equiv=<span class="string">&quot;pragma&quot;</span> content=<span class="string">&quot;no-cache&quot;</span>&gt;</span><br><span class="line">	 &lt;meta http-equiv=<span class="string">&quot;cache-control&quot;</span> content=<span class="string">&quot;no-cache&quot;</span>&gt;</span><br><span class="line">	 &lt;meta http-equiv=<span class="string">&quot;expires&quot;</span> content=<span class="string">&quot;0&quot;</span>&gt;    </span><br><span class="line">	 &lt;meta http-equiv=<span class="string">&quot;keywords&quot;</span> content=<span class="string">&quot;keyword1,keyword2,keyword3&quot;</span>&gt;</span><br><span class="line">	 &lt;meta http-equiv=<span class="string">&quot;description&quot;</span> content=<span class="string">&quot;This is my page&quot;</span>&gt;</span><br><span class="line">	 &lt;!--</span><br><span class="line">		&lt;link rel=<span class="string">&quot;stylesheet&quot;</span> type=<span class="string">&quot;text/css&quot;</span> href=<span class="string">&quot;styles.css&quot;</span>&gt;</span><br><span class="line"> 	 --&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;h1&gt; This is my JSP page.&lt;/h1&gt; &lt;br&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>14.<br>额外阅读:<br><a href="http://www.360doc.com/content/14/0321/13/8072791_362437511.shtml" title="MyEclipse优化设置(最详细版本)">http://www.360doc.com/content/14/0321/13/8072791_362437511.shtml</a><br><a href="https://www.evget.com/article/2015/4/29/22307.html">https://www.evget.com/article/2015/4/29/22307.html</a></p>
+<h2 id="插件安装"><a href="#插件安装" class="headerlink" title="插件安装"></a>插件安装</h2><ol>
+<li>SVN安装,本人采用离线link安装的方式安装的SVN1.6<br> 1.1.官网下载地址:<a href="http://subclipse.tigris.org/servlets/ProjectDocumentList?folderID=2240">http://subclipse.tigris.org/servlets/ProjectDocumentList?folderID=2240</a><br> 1.2.从网下载site-1.6.18.zip文件 <img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack13.png" class="">
+ 1.3.从中解压出features与 plugins文件夹，复制到D:\myPlugins\svn里面，其实是硬盘任意文件夹,其它的*.xml文件不要。<br> 1.4.在D:\zsoftware\MyEclipse2015\dropins(MyEclipse安装目录)下新建文件svn.link,内容是:path&#x3D;D:\myPlugins\svn保存。<br> 1.5.(味素:这一步不确定，先不要删除)删除E:\MyEclipse\MyEclipse8.5\configuration \org.eclipse.update文件夹<br> 1.6.重启myeclipse就一切正常了。 <img src="/p/2016-08-18-myeclipse-crack/2016-08-18-MyEclipse-crack14.png" class=""></li>
+</ol>
+]]></content>
+      <categories>
+        <category>软件</category>
+      </categories>
+      <tags>
+        <tag>MyEclipse</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WIN10的安装与优化设置</title>
+    <url>//p/2016-08-24-win10-install/</url>
+    <content><![CDATA[<span id="more"></span>
+<h2 id="启动盘的制作"><a href="#启动盘的制作" class="headerlink" title="启动盘的制作"></a>启动盘的制作</h2><p>&#x2F;&#x2F;TODO</p>
+]]></content>
+      <categories>
+        <category>Windows</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我回来了</title>
+    <url>//p/2017-09-22-i-back/</url>
+    <content><![CDATA[<p>好久不见</p>
+<span id="more"></span>
+<p>时间过得好快,我胖了…</p>
+<p>时间过得好快,我又胖了…</p>
+]]></content>
+      <categories>
+        <category>日志</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo多分类多标签图片路径写作教程</title>
+    <url>//p/2025-05-28-test-categories/</url>
+    <content><![CDATA[<p>摘要: 分类有层级关系,多层级关系; 标签没层级关系</p>
+<span id="more"></span>
+
+<h2 id="分类及标签说明"><a href="#分类及标签说明" class="headerlink" title="分类及标签说明"></a>分类及标签说明</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:</span><br><span class="line">  - 父分类1    分类有层级关系,父子关系,如图1</span><br><span class="line">  - 子分类1-1</span><br><span class="line">tags:</span><br><span class="line">  - 测试标签1  标签没层级关系 ,都是平铺</span><br><span class="line">  - 测试标签2</span><br><span class="line">  - 测试标签3</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">categories:   分类有层级关系,多层级关系,如图2</span><br><span class="line"> - [父分类1,分类1-1]</span><br><span class="line"> - [父分类2,分类2-1,分类2-1-1]</span><br><span class="line"> - 父分类3</span><br><span class="line"> </span><br><span class="line"> 并列分类</span><br><span class="line"> categories:</span><br><span class="line"> - [父分类1]</span><br><span class="line"> - [父分类2]</span><br></pre></td></tr></table></figure>
+
+
+
+<img src="/p/2025-05-28-test-categories/image-20250528113120698.png" class="image-20250528113120698">
+
+<img src="/p/2025-05-28-test-categories/image-20250528113630090.png" class="image-20250528113630090">
+
+<h2 id="如何增加摘要"><a href="#如何增加摘要" class="headerlink" title="如何增加摘要"></a>如何增加摘要</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">前面必须要有内容,要不不好使</span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">正文...</span><br></pre></td></tr></table></figure>
+
+<p>以前修改过的主题文件位置记录</p>
+<img src="/p/2025-05-28-test-categories/image-20250529095349186.png" class="image-20250529095349186">
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo保姆级教程</title>
+    <url>//p/2025-05-29-hexo-tutorial/</url>
+    <content><![CDATA[<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>网盘有工具合集<a href="https://www.123684.com/s/JVHLVv-rVWeh%E6%8F%90%E5%8F%96%E7%A0%81:zlay">https://www.123684.com/s/JVHLVv-rVWeh提取码:zlay</a></p>
+<h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p>本次教程基于hexo7.3.0最少要安装nodejs18</p>
+<p>下载地址:<a href="https://nodejs.org/download/release/latest-v18.x/node-v18.20.8-x64.msi">https://nodejs.org/download/release/latest-v18.x/node-v18.20.8-x64.msi</a></p>
+<span id="more"></span>
+
+<h2 id="安装git命令行工具"><a href="#安装git命令行工具" class="headerlink" title="安装git命令行工具"></a>安装git命令行工具</h2><p>下载地址:<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
+<h2 id="设置npm镜像源"><a href="#设置npm镜像源" class="headerlink" title="设置npm镜像源"></a>设置npm镜像源</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在任意文件夹-&gt;右键-&gt;open git base here</span><br><span class="line">之后再窗口输入命令</span><br><span class="line">设置为淘宝源</span><br><span class="line">npm config set registry https://registry.npmmirror.com/</span><br><span class="line">查看npm源</span><br><span class="line">npm config get registry</span><br><span class="line">查看nodejs版本</span><br><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
+<h2 id="安装notepad-编辑器"><a href="#安装notepad-编辑器" class="headerlink" title="安装notepad++编辑器"></a>安装notepad++编辑器</h2><p>可选 好用的编辑器</p>
+<h2 id="安装Typora"><a href="#安装Typora" class="headerlink" title="安装Typora"></a>安装Typora</h2><p>用于写博客</p>
+<p>从网盘下载集成版,或者从官网下载</p>
+<p>需修改如下设置,<strong>依赖hexo配置和插件 hexo-asset-image有bug 使用替代插件hexo-asset-pro</strong></p>
+<img src="/p/2025-05-29-hexo-tutorial/image-20250529135842178.png" class="image-20250529135842178">
+
+<h2 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h2><p>地址<a href="https://github.com/">https://github.com/</a> 记下<strong>用户名 密码 邮箱</strong></p>
+<p>可能需要特殊上网方式推荐几个自己测试使用,有推荐请留言</p>
+<p><a href="https://github.com/docmirror/dev-sidecar">https://github.com/docmirror/dev-sidecar</a></p>
+<p><a href="https://github.com/521xueweihan/GitHub520">https://github.com/521xueweihan/GitHub520</a></p>
+<p>新建3个仓库 第一个仓库的名必须是<username>.github.io  公开的仓库 存放最终生成的站点</p>
+<p>username是你的用户名</p>
+<p>第二个仓库hexo 源码仓库 存放你的hexo网站源码 <strong>私有!!!</strong></p>
+<p>第三个如果使用utterances作为评论系统则需要建一个评论仓库存放留言 公开仓库 名字随意,</p>
+<p>之后在<a href="https://github.com/apps/utterances%E9%85%8D%E7%BD%AE%E4%B8%8B%E8%BF%99%E4%B8%AA%E4%BB%93%E5%BA%93">https://github.com/apps/utterances配置下这个仓库</a></p>
+<h2 id="安装GithubDesktop"><a href="#安装GithubDesktop" class="headerlink" title="安装GithubDesktop"></a>安装GithubDesktop</h2><p>或者安装其他git客户端工具</p>
+<p>登录并且设置为github的用户名和邮箱, 如图</p>
+<img src="/p/2025-05-29-hexo-tutorial/image-20250529113905656.png" class="image-20250529113905656">
+
+<h2 id="设置ssh秘钥"><a href="#设置ssh秘钥" class="headerlink" title="设置ssh秘钥"></a>设置ssh秘钥</h2><h1 id="从零新建hexo"><a href="#从零新建hexo" class="headerlink" title="从零新建hexo"></a>从零新建hexo</h1><h2 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h2><p><a href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">全局安装</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">执行hexo命令 npx有时候可以省略 不好使就加上npx</span><br><span class="line">npx hexo &lt;command&gt;</span><br><span class="line">查看版本</span><br><span class="line">hexo -v</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="新建hexo"><a href="#新建hexo" class="headerlink" title="新建hexo"></a>新建hexo</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在你想存放代码的文件夹右键-&gt;git base here </span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">执行这个命令好像需要特殊上网要不容易失败</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br><span class="line">之后就可以在浏览器打开http://127.0.0.1:4000/访问刚刚生成的项目</span><br><span class="line">如果要关闭服务器按Ctrl+C</span><br><span class="line">hexo常用命令</span><br><span class="line">hexo clean --清理</span><br><span class="line">hexo g --清理 生成网页</span><br><span class="line">hexo s --本地启动服务器http://127.0.0.1:4000/</span><br></pre></td></tr></table></figure>
+
+<h2 id="下载next主题"><a href="#下载next主题" class="headerlink" title="下载next主题"></a>下载next主题</h2><p>官网<a href="https://theme-next.js.org/">https://theme-next.js.org/</a></p>
+<p>下载<a href="https://github.com/next-theme/hexo-theme-next/releases">https://github.com/next-theme/hexo-theme-next/releases</a></p>
+<p>下载之后解压放在themes文件夹下 改文件夹名为next</p>
+<h2 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd到hexo项目文件夹下</span><br><span class="line">npm install	hexo-asset-pro --save </span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">npm install hexo-generator-feed --save</span><br><span class="line">npm install hexo-generator-searchdb --save</span><br><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line"></span><br><span class="line">#代码压缩插件 https://github.com/curbengh/hexo-yam</span><br><span class="line">npm install hexo-yam --save </span><br><span class="line">#拼音插件</span><br><span class="line">npm install hexo-permalink-pinyin --save</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="配置-config-yml-根目录下"><a href="#配置-config-yml-根目录下" class="headerlink" title="配置_config.yml(根目录下)"></a>配置_config.yml(根目录下)</h2><p>大部分使用默认配置不用改,以下列出<strong>需要更改</strong>的配置项</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">主标题XXX’Blog</span></span><br><span class="line"><span class="attr">subtitle:</span> <span class="string">副标题</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">描述,或者个人介绍</span></span><br><span class="line"><span class="attr">keywords:</span> <span class="string">关键字</span> <span class="string">可以不写</span></span><br><span class="line"><span class="attr">author:</span> <span class="string">个人昵称</span> <span class="string">显示在网站下方</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"><span class="attr">timezone:</span> <span class="string">Asia/Shanghai</span></span><br><span class="line"></span><br><span class="line"><span class="comment">## 如果您的网站存放在子目录中，例如 http://example.com/blog，则请将您的 url 设为 http://example.com/blog 并把 root设为 /blog/</span></span><br><span class="line"><span class="comment">#此外，如果您的 Github Pages 需要使用 CNAME 文件自定义域名，请将 CNAME 文件置于 source 目录下，只有这样 hexo deploy 才能将 CNAME 文件一并推送至部署分支。</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://XXX.github.io/</span> <span class="comment">#部署网站的地址</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#相对路径 /p/不能省略 会把生成的资源集中在p文件夹下 不加会很分散,也可以是/post等等固定开头</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">/p/:year-:month-:day-:title/</span></span><br><span class="line"><span class="comment"># 新建文章的默认名字</span></span><br><span class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span>  <span class="string">建议使用这个格式</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#存放本地图片开关 资源文件夹</span></span><br><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#使用的主题,需要和themes\next的文件夹名称对应 也可以是其他值</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"><span class="comment">#部署配置 支持多个</span></span><br><span class="line"><span class="attr">deploy:</span> </span><br><span class="line"> <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">   <span class="attr">repo:</span> <span class="string">git@gitee.com:XXX/XXX.git</span></span><br><span class="line">   <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">   <span class="attr">repo:</span> <span class="string">git@github.com:XXX/XXX.github.io.git</span></span><br><span class="line">   <span class="attr">branch:</span> <span class="string">main</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#本地搜索服务 https://github.com/next-theme/hexo-generator-searchdb</span></span><br><span class="line"><span class="comment">#https://theme-next.js.org/docs/third-party-services/search-services.html?highlight=local+searc#Local-Search</span></span><br><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line"><span class="comment">#代码压缩 https://github.com/curbengh/hexo-yam</span></span><br><span class="line"><span class="attr">minify:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">previewServer:</span> <span class="literal">true</span> <span class="comment">#true时 hexo s执行时不压缩代码 false则全压缩</span></span><br><span class="line">  <span class="attr">html:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">exclude:</span></span><br><span class="line">  <span class="attr">css:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">exclude:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.min.css&quot;</span></span><br><span class="line">  <span class="attr">js:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">exclude:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.min.js&quot;</span></span><br><span class="line">  <span class="attr">svg:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">include:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.svg&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;!*.min.svg&quot;</span></span><br><span class="line">  <span class="attr">gzip:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">include:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.html&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.css&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.js&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.txt&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.ttf&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.atom&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.stl&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.xml&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.svg&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.eot&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.json&quot;</span></span><br><span class="line">  <span class="attr">brotli:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">include:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.html&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.css&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.js&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.txt&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.ttf&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.atom&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.stl&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.xml&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.svg&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.eot&quot;</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">&quot;*.json&quot;</span></span><br><span class="line"><span class="comment">#拼音插件 https://github.com/viko16/hexo-permalink-pinyin</span></span><br><span class="line"><span class="attr">permalink_pinyin:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">separator:</span> <span class="string">&#x27;-&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="配置主题Next-themes-next-config-yml"><a href="#配置主题Next-themes-next-config-yml" class="headerlink" title="配置主题Next(themes\next_config.yml)"></a>配置主题Next(themes\next_config.yml)</h2><p>大部分使用默认配置不用改,以下列出<strong>需要更改</strong>的配置项</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Schemes布局,支持4种风格布局 我喜欢Gemini 只能选一个</span></span><br><span class="line"><span class="comment">#scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line"><span class="comment">#scheme: Pisces</span></span><br><span class="line"><span class="attr">scheme:</span> <span class="string">Gemini</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#图标设置</span></span><br><span class="line"><span class="comment">#可以在https://realfavicongenerator.net/生成图标</span></span><br><span class="line"><span class="attr">favicon:</span></span><br><span class="line">  <span class="attr">small:</span> <span class="string">/uploads/favicon-96x96.png</span></span><br><span class="line">  <span class="attr">medium:</span> <span class="string">/uploads/favicon-96x96.png</span></span><br><span class="line">  <span class="attr">apple_touch_icon:</span> <span class="string">/uploads/apple-touch-icon.png</span></span><br><span class="line">  <span class="attr">safari_pinned_tab:</span> <span class="string">/uploads/favicon.svg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 版权设置</span></span><br><span class="line"><span class="comment"># See: https://creativecommons.org/about/cclicenses/</span></span><br><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line">  <span class="attr">license:</span> <span class="string">by-nc-nd</span></span><br><span class="line">  <span class="attr">size:</span> <span class="string">big</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">deed.zh-hans</span></span><br><span class="line">  </span><br><span class="line"><span class="comment">#菜单</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="attr">home:</span> <span class="string">/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-home</span></span><br><span class="line">  <span class="attr">categories:</span> <span class="string">/categories</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-th</span></span><br><span class="line">  <span class="attr">archives:</span> <span class="string">/archives</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-archive</span></span><br><span class="line">  <span class="attr">tags:</span> <span class="string">/tags</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-tags</span></span><br><span class="line">  <span class="attr">about:</span> <span class="string">/about</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-user</span></span><br><span class="line"><span class="comment">#首页头像</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">url:</span> <span class="string">/uploads/web-app-manifest-512x512.png</span></span><br><span class="line"><span class="comment">#首页联系方式</span></span><br><span class="line"><span class="attr">social:</span></span><br><span class="line">  <span class="attr">GitHub:</span> <span class="string">https://github.com/XXX</span> <span class="string">||</span> <span class="string">fab</span> <span class="string">fa-github</span></span><br><span class="line">  <span class="attr">E-Mail:</span> <span class="string">mailto:XXX@gmail.com</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br><span class="line">  <span class="attr">RSS:</span> <span class="string">/atom.xml</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-rss</span></span><br><span class="line">  <span class="attr">Gitee:</span> <span class="string">https://gitee.com/XXX</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br><span class="line">  </span><br><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">since:</span> <span class="number">2016</span> <span class="comment">#网站起始时间</span></span><br><span class="line">  <span class="attr">beian:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">icp:</span> <span class="string">&lt;a</span> <span class="string">href=&quot;http://beian.miit.gov.cn/&quot;</span> <span class="string">style=&quot;&quot;</span> <span class="string">target=&quot;_blank&quot;</span> <span class="string">&gt;辽ICP备12345号&lt;/a&gt;</span></span><br><span class="line">    <span class="attr">gongan_id:</span> <span class="number">12345</span></span><br><span class="line">    <span class="attr">gongan_num:</span> <span class="string">&lt;span</span> <span class="string">style=&quot;display:inline-block;&quot;</span> <span class="string">&gt;&lt;img</span> <span class="string">style=&quot;float:left;margin-bottom:-3px;margin-right:1px;&quot;</span> <span class="string">src=&quot;/uploads/gwab.png&quot;</span> <span class="string">/&gt;&lt;/span&gt;&lt;span&gt;辽公网安备</span> <span class="number">12345</span><span class="string">号&amp;nbsp;&lt;/span&gt;</span></span><br><span class="line">    <span class="attr">gongan_icon_url:</span></span><br><span class="line"></span><br><span class="line"><span class="attr">follow_me:</span></span><br><span class="line">  <span class="string">博客园:</span> <span class="string">https://www.cnblogs.com/XXX/</span> <span class="string">||</span> <span class="string">fa</span> <span class="string">fa-envelope</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># `Follow me on GitHub` banner in the top-right corner.</span></span><br><span class="line"><span class="attr">github_banner:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">permalink:</span> <span class="string">https://github.com/XXX</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># Utterances</span></span><br><span class="line"><span class="comment"># For more information: https://utteranc.es</span></span><br><span class="line"><span class="attr">utterances:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">XXXX/XXX-repository</span> <span class="comment"># Github repository owner and name</span></span><br><span class="line">  </span><br><span class="line"><span class="comment"># Local Search</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/next-theme/hexo-generator-searchdb</span></span><br><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  </span><br><span class="line"><span class="comment">#CDN 必须配置 七牛云CND 可以改为其他的</span></span><br><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="attr">plugins:</span> <span class="string">custom</span></span><br><span class="line">  <span class="attr">custom_cdn_url:</span> <span class="string">https://cdn.staticfile.org/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;cdnjs_file&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="手动部署"><a href="#手动部署" class="headerlink" title="手动部署"></a>手动部署</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">执行如下代码即可</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line">如果是git需要特殊上网 直接推送到&lt;username&gt;.github.io </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="源码上传到github"><a href="#源码上传到github" class="headerlink" title="源码上传到github"></a>源码上传到github</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">项目根目录下新增2个文件</span><br><span class="line">文件名叫 .gitignore</span><br><span class="line">内容为</span><br><span class="line">db.json</span><br><span class="line">public</span><br><span class="line">.deploy_git</span><br><span class="line">node_modules/</span><br><span class="line">.deploy*/</span><br><span class="line">Thumbs.db</span><br><span class="line">.DS_Store</span><br><span class="line">*.log</span><br><span class="line">package-lock.json</span><br><span class="line"></span><br><span class="line">第二个文件叫.npmignore</span><br><span class="line">内容为</span><br><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="github-action-一键部署"><a href="#github-action-一键部署" class="headerlink" title="github action 一键部署"></a>github action 一键部署</h2><h2 id="部署到Cloudflare-Pages"><a href="#部署到Cloudflare-Pages" class="headerlink" title="部署到Cloudflare Pages"></a>部署到Cloudflare Pages</h2><p><a href="https://zhuanlan.zhihu.com/p/1896206344874334028">https://zhuanlan.zhihu.com/p/1896206344874334028</a></p>
+<h1 id="迁移hexo-使用模版构建"><a href="#迁移hexo-使用模版构建" class="headerlink" title="迁移hexo(使用模版构建)"></a>迁移hexo(使用模版构建)</h1><h1 id="一些技巧"><a href="#一些技巧" class="headerlink" title="一些技巧"></a>一些技巧</h1><h2 id="添加404页"><a href="#添加404页" class="headerlink" title="添加404页"></a>添加404页</h2><p>在source目录下新增404.html即可 当访问错误的链接的时候会自动显示该页面,在本地执行hexo s 的时候不生效</p>
+<p>部署在github会生效</p>
+<p>可选项 :可以跳过编译或者参加编译见下方解释</p>
+<h2 id="如何跳过编译"><a href="#如何跳过编译" class="headerlink" title="如何跳过编译"></a>如何跳过编译</h2><p>skip_render	匹配到的文件将会被不做改动地复制到 public 目录中。 您可使用 glob 表达式来匹配路径。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">skip_render: &quot;mypage/**/*&quot;</span><br><span class="line"># 将会直接将 `source/mypage/index.html` 和 `source/mypage/code.js` 不做改动地输出到 &#x27;public&#x27; 目录</span><br><span class="line"># 你也可以用这种方法来跳过对指定文章文件的渲染</span><br><span class="line">skip_render: &quot;_posts/test-post.md&quot;</span><br><span class="line"># 这将会忽略对 &#x27;test-post.md&#x27; 的渲染</span><br><span class="line"></span><br><span class="line">## This also can be used to exclude posts,</span><br><span class="line">skip_render: &quot;_posts/test-post.md&quot;</span><br><span class="line"># will ignore the `source/_posts/test-post.md`.</span><br></pre></td></tr></table></figure>
+
+<h3 id="举例-404页面没被编译前"><a href="#举例-404页面没被编译前" class="headerlink" title="举例: 404页面没被编译前"></a>举例: 404页面没被编译前</h3><img src="/p/2025-05-29-hexo-tutorial/image-20250601181419957.png" class="image-20250601181419957">
+
+<h3 id="被编译后"><a href="#被编译后" class="headerlink" title="被编译后"></a>被编译后</h3><img src="/p/2025-05-29-hexo-tutorial/image-20250601181521458.png" class="image-20250601181521458">
+
+<h2 id="更换首页-增加导航"><a href="#更换首页-增加导航" class="headerlink" title="更换首页(增加导航)"></a>更换首页(增加导航)</h2><p>这里说的首页是 博客列表那个最新的博客在上</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">index_generator:</span><br><span class="line">  path: /home</span><br></pre></td></tr></table></figure>
+
+<p>之后在source目录下新增index.html</p>
+<p>给index.html增加到跳过编译的清单中</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">skip_render: &quot;index.html&quot;</span><br><span class="line">或者</span><br><span class="line">skip_render: &quot;*.html&quot;</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://blog.csdn.net/weixin_44150474/article/details/138997924">https://blog.csdn.net/weixin_44150474/article/details/138997924</a></p>
+<h1 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h1><h2 id="存在问题-1"><a href="#存在问题-1" class="headerlink" title="存在问题"></a>存在问题</h2><h3 id="新建文章的时不要用中文文件名"><a href="#新建文章的时不要用中文文件名" class="headerlink" title="新建文章的时不要用中文文件名"></a>新建文章的时不要用中文文件名</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new title  #正确</span><br><span class="line">hexo new 新文章 #错误</span><br><span class="line">可以在文件内容里改为中文标题 不影响 只是文件名不要用中文</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo同时部署在github和cloudflare pages遇到的问题</title>
+    <url>//p/2025-05-31-hexo-deploy-git-and-cloudflare/</url>
+    <content><![CDATA[<h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><ol>
+<li>目前hexo 同步部署在github和cloudflare pages</li>
+<li>代码推送到github 之后 通过github action自动发布</li>
+<li>代码变更之后 cloudflare pages也会自动发布</li>
+<li>评论系统我用的*<a href="https://utteranc.es/">utteranc.es</a>*</li>
+<li>相关教程看其他博客,或者留言</li>
+</ol>
+<h1 id="遇到问题"><a href="#遇到问题" class="headerlink" title="遇到问题"></a>遇到问题</h1><span id="more"></span>
+
+<ol>
+<li>因为是同一个配置 hexo 的url 都写的<a href="https://xxx.github.io/">https://XXX.github.io/</a></li>
+<li>博文下方的永久链接还是会显示为<a href="https://xxx.github.io/%E5%BC%80%E5%A4%B4">https://XXX.github.io/开头</a>, cloudflare pages应该是<a href="https://xxx.pages.dev/%E5%BC%80%E5%A4%B4">https://XXX.pages.dev/开头</a></li>
+<li>utteranc.es评论系统在cloudflare pages无法使用,根本无法登录成功</li>
+</ol>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>cloudflare pages的构建命令原来是npx hexo generate</p>
+<p>现在改为下方代码即可, 动态修改url参数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npx hexo config url https://XXX.pages.dev/ &amp;&amp; npx hexo generate</span><br></pre></td></tr></table></figure>
+
+<h1 id="特别提示"><a href="#特别提示" class="headerlink" title="特别提示"></a>特别提示</h1><p>hexo config key value 命令会直接修改_config.yml配置文件, 所有注释都会丢失</p>
+<p>注意2条命令中间的连接符是 &amp;&amp; 保证2条命令按顺序执行,可以参考</p>
+<p><a href="https://zhuanlan.zhihu.com/p/137993627">https://zhuanlan.zhihu.com/p/137993627</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Qexo教程-Vercel部署(PostgreSQL/Vercel)</title>
+    <url>//p/2025-05-31-qexo-tutorial/</url>
+    <content><![CDATA[<blockquote>
+<p>一个美观、强大的在线 静态博客 管理器</p>
+<p>不只是一个编辑器</p>
+</blockquote>
+<p>一键部署</p>
+<p>创建数据库</p>
+<p>Neon Database, powered by Neon</p>
+<p>参考<a href="https://www.cnblogs.com/an-shiguang/p/18269052">https://www.cnblogs.com/an-shiguang/p/18269052</a></p>
+<p><a href="https://www.oplog.cn/qexo/configs/vercel.html">https://www.oplog.cn/qexo/configs/vercel.html</a></p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo+Next主题安装Waline评论插件</title>
+    <url>//p/2025-06-04-hexo-next-waline/</url>
+    <content><![CDATA[<h1 id="部署服务端"><a href="#部署服务端" class="headerlink" title="部署服务端"></a>部署服务端</h1><blockquote>
+<p>参考<a href="https://waline.js.org/guide/get-started/">https://waline.js.org/guide/get-started/</a></p>
+</blockquote>
+<p>因为官方文档写的比较详细 简单写写</p>
+<span id="more"></span>
+
+<h2 id="部署数据库https-leancloud-app"><a href="#部署数据库https-leancloud-app" class="headerlink" title="部署数据库https://leancloud.app/"></a>部署数据库<a href="https://leancloud.app/">https://leancloud.app/</a></h2><h2 id="在Vercel-部署-服务端"><a href="#在Vercel-部署-服务端" class="headerlink" title="在Vercel 部署 (服务端)"></a>在Vercel 部署 (服务端)</h2><h1 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h1><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">在hexo安装插件</span><br><span class="line">npm install @waline/hexo-next --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>在根目录下的_config.yml中增加如下代码</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Waline 评论系统start https://www.npmjs.com/package/@waline/hexo-next</span></span><br><span class="line"><span class="attr">waline:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">serverURL:</span> <span class="string">https://waline.zlay.fun</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># Waline library CDN url, you can set this to your preferred CDN</span></span><br><span class="line">  <span class="comment"># libUrl: https://unpkg.com/@waline/client@v3/dist/waline.umd.js</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Waline CSS styles CDN url, you can set this to your preferred CDN</span></span><br><span class="line">  <span class="attr">cssUrl:</span> <span class="string">https://unpkg.com/@waline/client@v3/dist/waline.css</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment"># Custom locales 自定义区域设置</span></span><br><span class="line">  <span class="attr">locale:</span></span><br><span class="line">    <span class="attr">placeholder:</span> <span class="string">请文明评论呀</span> <span class="comment">#评论框的默认文字</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 如果为false，评论数将只显示在文章页面，而不是在主页</span></span><br><span class="line">  <span class="attr">commentCount:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 浏览量统计，注意：您不应该同时启用`waline.pageview`和`leancloud_visitors`。 leancloud_visitors在主题文件夹中</span></span><br><span class="line">  <span class="attr">pageview:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">search:</span> <span class="literal">false</span> <span class="comment">#禁用表情包搜索</span></span><br><span class="line">  <span class="attr">reaction:</span> <span class="literal">false</span> <span class="comment">#文章反应</span></span><br><span class="line">  <span class="attr">imageUploader:</span> <span class="literal">false</span> <span class="comment">#图片上传</span></span><br><span class="line">  <span class="comment"># Custom emoji</span></span><br><span class="line">  <span class="comment"># emoji:</span></span><br><span class="line">  <span class="comment">#   - https://unpkg.com/@waline/emojis@1.1.0/weibo</span></span><br><span class="line">  <span class="comment">#   - https://unpkg.com/@waline/emojis@1.1.0/alus</span></span><br><span class="line">  <span class="comment">#   - https://unpkg.com/@waline/emojis@1.1.0/bilibili</span></span><br><span class="line">  <span class="comment">#   - https://unpkg.com/@waline/emojis@1.1.0/qq</span></span><br><span class="line">  <span class="comment">#   - https://unpkg.com/@waline/emojis@1.1.0/tieba</span></span><br><span class="line">  <span class="comment">#   - https://unpkg.com/@waline/emojis@1.1.0/tw-emoji</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Comment information, valid meta are nick, mail and link</span></span><br><span class="line">  <span class="comment"># meta:</span></span><br><span class="line">  <span class="comment">#   - nick</span></span><br><span class="line">  <span class="comment">#   - mail</span></span><br><span class="line">  <span class="comment">#   - link</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Set required meta field, e.g.: [nick] | [nick, mail] 未登录必填字段</span></span><br><span class="line">  <span class="attr">requiredMeta:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">nick</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Word limit, no limit when setting to 0</span></span><br><span class="line">  <span class="comment"># wordLimit: 0</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Whether enable login, can choose from &#x27;enable&#x27;, &#x27;disable&#x27; and &#x27;force&#x27;</span></span><br><span class="line">  <span class="comment"># login: enable</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># comment per page</span></span><br><span class="line">  <span class="comment"># pageSize: 10</span></span><br><span class="line"><span class="comment"># Waline 评论系统 end</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="管理"><a href="#管理" class="headerlink" title="管理"></a>管理</h1><h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>https:&#x2F;&#x2F;{服务端部署地址}&#x2F;ui&#x2F;register</p>
+<h2 id="管理-1"><a href="#管理-1" class="headerlink" title="管理"></a>管理</h2><p>https:&#x2F;&#x2F;{服务端部署地址}&#x2F;ui</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Creative Commons证书选择</title>
+    <url>//p/2025-06-06-hexo-choose-licenses/</url>
+    <content><![CDATA[<p>官网协议列表:<a href="https://creativecommons.org/licenses/">https://creativecommons.org/licenses/</a></p>
+<p>next主题默认协议是<strong>by-nc-sa</strong>: 署名+非商业使用+相同方式共享4.0</p>
+<span id="more"></span>
+
+<h1 id="可以商业使用"><a href="#可以商业使用" class="headerlink" title="可以商业使用"></a>可以商业使用</h1><h2 id="by-署名4-0"><a href="#by-署名4-0" class="headerlink" title="by: 署名4.0"></a>by: 署名4.0</h2><p><a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">https://creativecommons.org/licenses/by/4.0/deed.zh-hans</a></p>
+<p>署名 之后做什么都行,最宽泛协议</p>
+<h2 id="by-sa-署名-相同方式共享4-0"><a href="#by-sa-署名-相同方式共享4-0" class="headerlink" title="by-sa: 署名+相同方式共享4.0"></a>by-sa: 署名+相同方式共享4.0</h2><p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans">https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans</a></p>
+<p>署名 +协议不变(by-sa) 之后做什么都行</p>
+<h2 id="by-nd-署名-禁止演绎4-0"><a href="#by-nd-署名-禁止演绎4-0" class="headerlink" title="by-nd: 署名+禁止演绎4.0"></a>by-nd: 署名+禁止演绎4.0</h2><p><a href="https://creativecommons.org/licenses/by-nd/4.0/deed.zh-hans">https://creativecommons.org/licenses/by-nd/4.0/deed.zh-hans</a></p>
+<p>署名+不能改编 之后做什么都行 (感觉是只能原文转发署名)</p>
+<h1 id="禁止商业性使用"><a href="#禁止商业性使用" class="headerlink" title="禁止商业性使用"></a>禁止<strong>商业性使用</strong></h1><h2 id="by-nc-署名-非商业使用4-0"><a href="#by-nc-署名-非商业使用4-0" class="headerlink" title="by-nc: 署名+非商业使用4.0"></a>by-nc: 署名+非商业使用4.0</h2><p><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans">https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans</a></p>
+<h2 id="by-nc-nd-署名-非商业使用-禁止演绎4-0"><a href="#by-nc-nd-署名-非商业使用-禁止演绎4-0" class="headerlink" title="by-nc-nd: 署名+非商业使用+禁止演绎4.0"></a>by-nc-nd: 署名+非商业使用+禁止演绎4.0</h2><p><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans">https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh-hans</a></p>
+<h2 id="by-nc-sa-署名-非商业使用-相同方式共享4-0"><a href="#by-nc-sa-署名-非商业使用-相同方式共享4-0" class="headerlink" title="by-nc-sa: 署名+非商业使用+相同方式共享4.0"></a>by-nc-sa: 署名+非商业使用+相同方式共享4.0</h2><p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans">https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans</a></p>
+<h1 id="next主题参考配置"><a href="#next主题参考配置" class="headerlink" title="next主题参考配置"></a>next主题参考配置</h1><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="string">文件位置themes/next/_config.yml</span></span><br><span class="line"></span><br><span class="line"><span class="attr">creative_commons:</span></span><br><span class="line">  <span class="comment"># Available values: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero</span></span><br><span class="line">  <span class="attr">license:</span> <span class="string">by-nc-sa</span></span><br><span class="line">  <span class="comment"># Available values: big | small</span></span><br><span class="line">  <span class="attr">size:</span> <span class="string">big</span></span><br><span class="line">  <span class="attr">sidebar:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">post:</span> <span class="literal">true</span></span><br><span class="line">  <span class="comment"># You can set a language value if you prefer a translated version of CC license, e.g. deed.zh</span></span><br><span class="line">  <span class="comment"># CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">deed.zh-hans</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>//p/2016-05-18-hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>Hello-World</tag>
+      </tags>
+  </entry>
+</search>

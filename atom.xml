@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>zlay - 素喂’Blog</title>
+  <icon>https://zlay0701.github.io/icon.png</icon>
+  <subtitle>你必须很努力,才能看起来毫不费力</subtitle>
+  <link href="https://zlay0701.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://zlay0701.github.io/"/>
+  <updated>2025-06-07T03:18:01.680Z</updated>
+  <id>https://zlay0701.github.io/</id>
+  
+  <author>
+    <name>素喂</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Creative Commons证书选择</title>
+    <link href="https://zlay0701.github.io/p/2025-06-06-hexo-choose-licenses/"/>
+    <id>https://zlay0701.github.io/p/2025-06-06-hexo-choose-licenses/</id>
+    <published>2025-06-06T14:25:51.000Z</published>
+    <updated>2025-06-07T03:18:01.680Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;官网协议列表:&lt;a href=&quot;https://creativecommons.org/licenses/&quot;&gt;https://creativecommons.org/licenses/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;next主题默认协议是&lt;strong&gt;by-nc-sa&lt;/strong&gt;: 署名+非商业使用+相同方式共享4.0&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+Next主题安装Waline评论插件</title>
+    <link href="https://zlay0701.github.io/p/2025-06-04-hexo-next-waline/"/>
+    <id>https://zlay0701.github.io/p/2025-06-04-hexo-next-waline/</id>
+    <published>2025-06-04T07:21:07.000Z</published>
+    <updated>2025-06-07T03:18:01.680Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;部署服务端&quot;&gt;&lt;a href=&quot;#部署服务端&quot; class=&quot;headerlink&quot; title=&quot;部署服务端&quot;&gt;&lt;/a&gt;部署服务端&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;参考&lt;a href=&quot;https://waline.js.org/guide/get-started/&quot;&gt;https://waline.js.org/guide/get-started/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;因为官方文档写的比较详细 简单写写&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Qexo教程-Vercel部署(PostgreSQL/Vercel)</title>
+    <link href="https://zlay0701.github.io/p/2025-05-31-qexo-tutorial/"/>
+    <id>https://zlay0701.github.io/p/2025-05-31-qexo-tutorial/</id>
+    <published>2025-05-31T15:10:46.000Z</published>
+    <updated>2025-06-07T03:18:01.680Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;一个美观、强大的在线 静态博客 管理器&lt;/p&gt;
+&lt;p&gt;不只是一个编辑器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;一键部署&lt;/p&gt;
+&lt;p&gt;创建数据库&lt;/p&gt;
+&lt;p&gt;Neon Database, powered by</summary>
+        
+      
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo同时部署在github和cloudflare pages遇到的问题</title>
+    <link href="https://zlay0701.github.io/p/2025-05-31-hexo-deploy-git-and-cloudflare/"/>
+    <id>https://zlay0701.github.io/p/2025-05-31-hexo-deploy-git-and-cloudflare/</id>
+    <published>2025-05-31T13:52:02.000Z</published>
+    <updated>2025-06-07T03:18:01.680Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;目前hexo 同步部署在github和cloudflare pages&lt;/li&gt;
+&lt;li&gt;代码推送到github 之后 通过github action自动发布&lt;/li&gt;
+&lt;li&gt;代码变更之后 cloudflare pages也会自动发布&lt;/li&gt;
+&lt;li&gt;评论系统我用的*&lt;a href=&quot;https://utteranc.es/&quot;&gt;utteranc.es&lt;/a&gt;*&lt;/li&gt;
+&lt;li&gt;相关教程看其他博客,或者留言&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;遇到问题&quot;&gt;&lt;a href=&quot;#遇到问题&quot; class=&quot;headerlink&quot; title=&quot;遇到问题&quot;&gt;&lt;/a&gt;遇到问题&lt;/h1&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo保姆级教程</title>
+    <link href="https://zlay0701.github.io/p/2025-05-29-hexo-tutorial/"/>
+    <id>https://zlay0701.github.io/p/2025-05-29-hexo-tutorial/</id>
+    <published>2025-05-29T02:46:33.000Z</published>
+    <updated>2025-06-07T03:18:01.677Z</updated>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h1&gt;&lt;p&gt;网盘有工具合集&lt;a href=&quot;https://www.123684.com/s/JVHLVv-rVWeh%E6%8F%90%E5%8F%96%E7%A0%81:zlay&quot;&gt;https://www.123684.com/s/JVHLVv-rVWeh提取码:zlay&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;安装nodejs&quot;&gt;&lt;a href=&quot;#安装nodejs&quot; class=&quot;headerlink&quot; title=&quot;安装nodejs&quot;&gt;&lt;/a&gt;安装nodejs&lt;/h2&gt;&lt;p&gt;本次教程基于hexo7.3.0最少要安装nodejs18&lt;/p&gt;
+&lt;p&gt;下载地址:&lt;a href=&quot;https://nodejs.org/download/release/latest-v18.x/node-v18.20.8-x64.msi&quot;&gt;https://nodejs.org/download/release/latest-v18.x/node-v18.20.8-x64.msi&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo多分类多标签图片路径写作教程</title>
+    <link href="https://zlay0701.github.io/p/2025-05-28-test-categories/"/>
+    <id>https://zlay0701.github.io/p/2025-05-28-test-categories/</id>
+    <published>2025-05-28T03:19:04.000Z</published>
+    <updated>2025-06-07T03:18:01.676Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;摘要: 分类有层级关系,多层级关系; 标签没层级关系&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我回来了</title>
+    <link href="https://zlay0701.github.io/p/2017-09-22-i-back/"/>
+    <id>https://zlay0701.github.io/p/2017-09-22-i-back/</id>
+    <published>2017-09-22T07:18:33.000Z</published>
+    <updated>2025-06-07T03:18:01.676Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;好久不见&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日志" scheme="https://zlay0701.github.io/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="随笔" scheme="https://zlay0701.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WIN10的安装与优化设置</title>
+    <link href="https://zlay0701.github.io/p/2016-08-24-win10-install/"/>
+    <id>https://zlay0701.github.io/p/2016-08-24-win10-install/</id>
+    <published>2016-08-24T03:35:48.000Z</published>
+    <updated>2025-06-07T03:18:01.676Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;h2 id=&quot;启动盘的制作&quot;&gt;&lt;a href=&quot;#启动盘的制作&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Windows" scheme="https://zlay0701.github.io/categories/Windows/"/>
+    
+    
+    <category term="Windows" scheme="https://zlay0701.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MyEclipse2015 Stable 2.0下载+破解+优化+插件安装教程</title>
+    <link href="https://zlay0701.github.io/p/2016-08-18-myeclipse-crack/"/>
+    <id>https://zlay0701.github.io/p/2016-08-18-myeclipse-crack/</id>
+    <published>2016-08-18T05:21:36.000Z</published>
+    <updated>2025-06-07T03:18:01.672Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面:&quot;&gt;&lt;/a&gt;写在前面:&lt;/h2&gt;&lt;p&gt;MyEclipse2015下载可以到MyEclipse中文网,下载官方安装包.&lt;br&gt;本教程适用于Windows系统.&lt;br&gt;鉴于MyEclipse2016处于开发测试期也许不稳定,本人推荐使用MyEclipse2015 S2,MyEclipse2015 S3本人测试无法完美破解,会闪退如有谁解决欢迎联系.&lt;br&gt;&lt;a href=&quot;http://www.myeclipsecn.com/download/&quot;&gt;MyEclipse中文网:http://www.myeclipsecn.com/download/&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="MyEclipse" scheme="https://zlay0701.github.io/tags/MyEclipse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MyEclipse 异常 Subversion Native Library Not Available解决方案</title>
+    <link href="https://zlay0701.github.io/p/2016-07-03-subversion-native-library-not-available/"/>
+    <id>https://zlay0701.github.io/p/2016-07-03-subversion-native-library-not-available/</id>
+    <published>2016-07-03T07:57:46.000Z</published>
+    <updated>2025-06-07T03:18:01.671Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;摘要&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="MyEclipse" scheme="https://zlay0701.github.io/tags/MyEclipse/"/>
+    
+    <category term="SVN" scheme="https://zlay0701.github.io/tags/SVN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>技术类博客网站推荐</title>
+    <link href="https://zlay0701.github.io/p/2016-05-26-blog-recommended/"/>
+    <id>https://zlay0701.github.io/p/2016-05-26-blog-recommended/</id>
+    <published>2016-05-26T08:28:51.000Z</published>
+    <updated>2025-06-07T03:18:01.671Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;首先呢，就是推荐技术类网站&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="其他" scheme="https://zlay0701.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="博客推荐" scheme="https://zlay0701.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>UltraEdit的配置</title>
+    <link href="https://zlay0701.github.io/p/2016-05-25-set-ultraedit/"/>
+    <id>https://zlay0701.github.io/p/2016-05-25-set-ultraedit/</id>
+    <published>2016-05-25T02:42:29.000Z</published>
+    <updated>2025-06-07T03:18:01.670Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;1-解决-禁止自动生成同名bak文件&quot;&gt;&lt;a href=&quot;#1-解决-禁止自动生成同名bak文件&quot; class=&quot;headerlink&quot; title=&quot;1.解决:禁止自动生成同名bak文件&quot;&gt;&lt;/a&gt;1.解决:禁止自动生成同名bak文件&lt;/h3&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="UltraEdit" scheme="https://zlay0701.github.io/tags/UltraEdit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字符编码笔记：ASCII，Unicode和UTF-8</title>
+    <link href="https://zlay0701.github.io/p/2016-05-23-ascii-unicode-utf-8/"/>
+    <id>https://zlay0701.github.io/p/2016-05-23-ascii-unicode-utf-8/</id>
+    <published>2016-05-23T08:07:37.000Z</published>
+    <updated>2025-06-07T03:18:01.670Z</updated>
+    
+    
+    <summary type="html">&lt;h3 id=&quot;1-ASCII码&quot;&gt;&lt;a href=&quot;#1-ASCII码&quot; class=&quot;headerlink&quot; title=&quot;1. ASCII码&quot;&gt;&lt;/a&gt;1. ASCII码&lt;/h3&gt;&lt;p&gt;我们知道，在计算机内部，所有的信息最终都表示为一个二进制的字符串。每一个二进制位（bit）有0和1两种状态，因此八个二进制位就可以组合出256种状态，这被称为一个字节（byte）。也就是说，一个字节一共可以用来表示256种不同的状态，每一个状态对应一个符号，就是256个符号，从0000000到11111111。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="字符编码" scheme="https://zlay0701.github.io/categories/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/"/>
+    
+    
+    <category term="Unicode" scheme="https://zlay0701.github.io/tags/Unicode/"/>
+    
+    <category term="ASCII" scheme="https://zlay0701.github.io/tags/ASCII/"/>
+    
+    <category term="UTF-8" scheme="https://zlay0701.github.io/tags/UTF-8/"/>
+    
+    <category term="字符编码" scheme="https://zlay0701.github.io/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>好久不见,味素</title>
+    <link href="https://zlay0701.github.io/p/2016-05-19-longtimenosee/"/>
+    <id>https://zlay0701.github.io/p/2016-05-19-longtimenosee/</id>
+    <published>2016-05-19T14:04:29.000Z</published>
+    <updated>2025-06-07T03:18:01.669Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;一部电影，一句动人台词# 我喜欢你在71华氏度的气温里还会感冒  我喜欢你要花上半个小时点三明治  我喜欢你现在皱着眉头 像看一个疯子似的看着我  我喜欢一整天呆在你的身边后 我的衣服上能问到你的香水味  我喜欢你是我每天如睡前最后一个想要讲话的人&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="日志" scheme="https://zlay0701.github.io/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+    <category term="随笔" scheme="https://zlay0701.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://zlay0701.github.io/p/2016-05-18-hello-world/"/>
+    <id>https://zlay0701.github.io/p/2016-05-18-hello-world/</id>
+    <published>2016-05-18T02:24:39.000Z</published>
+    <updated>2025-06-07T03:18:01.680Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="其他" scheme="https://zlay0701.github.io/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="Hello-World" scheme="https://zlay0701.github.io/tags/Hello-World/"/>
+    
+  </entry>
+  
+</feed>

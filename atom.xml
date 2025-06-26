@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>zlay - 素喂’Blog</title>
+  <icon>https://zlay0701.github.io/icon.png</icon>
+  <subtitle>你必须很努力,才能看起来毫不费力</subtitle>
+  <link href="https://zlay0701.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://zlay0701.github.io/"/>
+  <updated>2025-06-26T07:55:51.903Z</updated>
+  <id>https://zlay0701.github.io/</id>
+  
+  <author>
+    <name>素喂</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>VuePress-v2-hope主题上手指南</title>
+    <link href="https://zlay0701.github.io/post/2025-06-24-vuepress2-start/"/>
+    <id>https://zlay0701.github.io/post/2025-06-24-vuepress2-start/</id>
+    <published>2025-06-24T03:37:07.000Z</published>
+    <updated>2025-06-26T07:55:51.903Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: VuePress-v2-hope主题上手指南&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="VuePress" scheme="https://zlay0701.github.io/categories/VuePress/"/>
+    
+    
+    <category term="VuePress" scheme="https://zlay0701.github.io/tags/VuePress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hugo自定义首页</title>
+    <link href="https://zlay0701.github.io/post/2025-06-23-hugo-change-home-page/"/>
+    <id>https://zlay0701.github.io/post/2025-06-23-hugo-change-home-page/</id>
+    <published>2025-06-23T01:04:37.000Z</published>
+    <updated>2025-06-26T07:55:51.903Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: hugo自定义首页&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/categories/Hugo/"/>
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/tags/Hugo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo迁移hugo解决图片路径问题插件</title>
+    <link href="https://zlay0701.github.io/post/2025-06-22-hexo-to-hugo-fix-img/"/>
+    <id>https://zlay0701.github.io/post/2025-06-22-hexo-to-hugo-fix-img/</id>
+    <published>2025-06-22T08:19:38.000Z</published>
+    <updated>2025-06-26T07:55:51.903Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: hexo迁移hugo解决图片路径问题插件(通过豆包AI生成)&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/categories/Hugo/"/>
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/tags/Hugo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hugo雨果&amp;next主题博客搭建教程</title>
+    <link href="https://zlay0701.github.io/post/2025-06-21-hugo-start/"/>
+    <id>https://zlay0701.github.io/post/2025-06-21-hugo-start/</id>
+    <published>2025-06-21T15:27:17.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: hugo雨果&amp;amp;next主题博客搭建教程&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/categories/Hugo/"/>
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/tags/Hugo/"/>
+    
+    <category term="Next" scheme="https://zlay0701.github.io/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java内置函数式</title>
+    <link href="https://zlay0701.github.io/post/2025-06-21-java-function/"/>
+    <id>https://zlay0701.github.io/post/2025-06-21-java-function/</id>
+    <published>2025-06-21T05:31:17.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: java内置函数式, 通过豆包生成&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spring问题汇总</title>
+    <link href="https://zlay0701.github.io/post/2025-06-19-spring-config/"/>
+    <id>https://zlay0701.github.io/post/2025-06-19-spring-config/</id>
+    <published>2025-06-19T07:52:34.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: spring问题汇总&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="spring" scheme="https://zlay0701.github.io/tags/spring/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>myBatis问题汇总</title>
+    <link href="https://zlay0701.github.io/post/2025-06-19-mybatis-config/"/>
+    <id>https://zlay0701.github.io/post/2025-06-19-mybatis-config/</id>
+    <published>2025-06-19T01:11:08.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: myBatis问题汇总&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="MyBatis" scheme="https://zlay0701.github.io/tags/MyBatis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>javafx介绍</title>
+    <link href="https://zlay0701.github.io/post/2025-06-17-javafx-tutorial/"/>
+    <id>https://zlay0701.github.io/post/2025-06-17-javafx-tutorial/</id>
+    <published>2025-06-17T01:31:22.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: javafx介绍&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="javafx" scheme="https://zlay0701.github.io/categories/javafx/"/>
+    
+    
+    <category term="javafx" scheme="https://zlay0701.github.io/tags/javafx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>注解@Slf4j的简单使用教程（新手入门）</title>
+    <link href="https://zlay0701.github.io/post/2025-06-17-slf4j-tutorial/"/>
+    <id>https://zlay0701.github.io/post/2025-06-17-slf4j-tutorial/</id>
+    <published>2025-06-17T01:23:48.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: 注解@Slf4j的简单使用教程（新手入门）&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="Slf4j" scheme="https://zlay0701.github.io/tags/Slf4j/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jdk9+ lombok 提示 Module lombok not found的解决办法</title>
+    <link href="https://zlay0701.github.io/post/2025-06-17-jdk-lombok-config/"/>
+    <id>https://zlay0701.github.io/post/2025-06-17-jdk-lombok-config/</id>
+    <published>2025-06-17T01:20:11.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: jdk9+ lombok 提示 Module lombok not found的解决办法&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="lombok" scheme="https://zlay0701.github.io/tags/lombok/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>notion常见问题汇总</title>
+    <link href="https://zlay0701.github.io/post/2025-06-17-notion-config/"/>
+    <id>https://zlay0701.github.io/post/2025-06-17-notion-config/</id>
+    <published>2025-06-17T01:16:11.000Z</published>
+    <updated>2025-06-26T07:55:51.902Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: notion常见问题汇总&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="notion" scheme="https://zlay0701.github.io/tags/notion/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git问题汇总</title>
+    <link href="https://zlay0701.github.io/post/2025-06-17-git-config/"/>
+    <id>https://zlay0701.github.io/post/2025-06-17-git-config/</id>
+    <published>2025-06-17T00:05:45.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: git问题汇总&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="git" scheme="https://zlay0701.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jfoenix(Javafx第三方插件库)本地编译</title>
+    <link href="https://zlay0701.github.io/post/2025-06-16-jfoenix-build/"/>
+    <id>https://zlay0701.github.io/post/2025-06-16-jfoenix-build/</id>
+    <published>2025-06-16T07:59:09.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: jfoenix(Javafx第三方插件库)本地编译&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="javafx" scheme="https://zlay0701.github.io/categories/javafx/"/>
+    
+    
+    <category term="jfoenix" scheme="https://zlay0701.github.io/tags/jfoenix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gradle指定JDK位置，JVM参数，网络代理配置</title>
+    <link href="https://zlay0701.github.io/post/2025-06-16-gradle-config/"/>
+    <id>https://zlay0701.github.io/post/2025-06-16-gradle-config/</id>
+    <published>2025-06-16T07:54:07.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Gradle指定JDK位置，JVM参数，网络代理配置&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="Gradle" scheme="https://zlay0701.github.io/tags/Gradle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IntelliJ IDEA新特性记录(已更新2025)</title>
+    <link href="https://zlay0701.github.io/post/2025-06-15-idea-new-feature/"/>
+    <id>https://zlay0701.github.io/post/2025-06-15-idea-new-feature/</id>
+    <published>2025-06-15T02:03:52.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: IntelliJ IDEA新特性记录&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="idea" scheme="https://zlay0701.github.io/categories/idea/"/>
+    
+    
+    <category term="idea" scheme="https://zlay0701.github.io/tags/idea/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>myeclipse新特性记录(已更新2025.1.1)</title>
+    <link href="https://zlay0701.github.io/post/2025-06-15-myeclipse-new-feature/"/>
+    <id>https://zlay0701.github.io/post/2025-06-15-myeclipse-new-feature/</id>
+    <published>2025-06-15T02:03:35.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: myeclipse新特性记录&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="MyEclipse" scheme="https://zlay0701.github.io/categories/MyEclipse/"/>
+    
+    
+    <category term="MyEclipse" scheme="https://zlay0701.github.io/tags/MyEclipse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>eclipse新特性记录(已更新2025-06)</title>
+    <link href="https://zlay0701.github.io/post/2025-06-15-eclipse-new-feature/"/>
+    <id>https://zlay0701.github.io/post/2025-06-15-eclipse-new-feature/</id>
+    <published>2025-06-15T02:03:22.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: eclipse新特性记录&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="eclipse" scheme="https://zlay0701.github.io/categories/eclipse/"/>
+    
+    
+    <category term="eclipse" scheme="https://zlay0701.github.io/tags/eclipse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>jdk新特性记录(已更新jdk21)</title>
+    <link href="https://zlay0701.github.io/post/2025-06-15-jdk-new-feature/"/>
+    <id>https://zlay0701.github.io/post/2025-06-15-jdk-new-feature/</id>
+    <published>2025-06-15T02:03:08.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: jdk新特性记录&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="jdk" scheme="https://zlay0701.github.io/tags/jdk/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Eclipse 报错 Unable to load annotation processor factory ECLIPSE_HOME/plugins/XXX</title>
+    <link href="https://zlay0701.github.io/post/2025-06-14-problem-unable-to-load-eclipse-home/"/>
+    <id>https://zlay0701.github.io/post/2025-06-14-problem-unable-to-load-eclipse-home/</id>
+    <published>2025-06-14T06:26:26.000Z</published>
+    <updated>2025-06-26T07:55:51.901Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Eclipse 报错 Unable to load annotation processor factory ECLIPSE_HOME&amp;#x2F;plugins&amp;#x2F;XXX&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="eclipse" scheme="https://zlay0701.github.io/categories/eclipse/"/>
+    
+    
+    <category term="eclipse" scheme="https://zlay0701.github.io/tags/eclipse/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决maven问题 cvc-elt.1.a Cannot find the declaration of element &#39;project&#39;</title>
+    <link href="https://zlay0701.github.io/post/2025-06-14-maven-problem-cvc-elt/"/>
+    <id>https://zlay0701.github.io/post/2025-06-14-maven-problem-cvc-elt/</id>
+    <published>2025-06-14T05:44:08.000Z</published>
+    <updated>2025-06-26T07:55:51.900Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: pom.xml报错: cvc-elt.1.a: Cannot find the declaration of element ‘project’. [cvc-elt.1.a]&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="java" scheme="https://zlay0701.github.io/categories/java/"/>
+    
+    
+    <category term="maven" scheme="https://zlay0701.github.io/tags/maven/"/>
+    
+  </entry>
+  
+</feed>

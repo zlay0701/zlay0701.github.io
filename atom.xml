@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>zlay - 素喂’Blog</title>
+  <icon>https://zlay0701.github.io/icon.png</icon>
+  <subtitle>你必须很努力,才能看起来毫不费力</subtitle>
+  <link href="https://zlay0701.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://zlay0701.github.io/"/>
+  <updated>2026-01-22T02:42:47.133Z</updated>
+  <id>https://zlay0701.github.io/</id>
+  
+  <author>
+    <name>素喂</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>消息推送服务moepush部署教程</title>
+    <link href="https://zlay0701.github.io/post/2026-01-16-moepush-install/"/>
+    <id>https://zlay0701.github.io/post/2026-01-16-moepush-install/</id>
+    <published>2026-01-16T14:21:36.000Z</published>
+    <updated>2026-01-22T02:42:47.133Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: 消息推送服务moepush部署教程&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="moepush" scheme="https://zlay0701.github.io/tags/moepush/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excel中xlookup使用教程(豆包AI)</title>
+    <link href="https://zlay0701.github.io/post/2025-08-14-excel-xlookup-demo/"/>
+    <id>https://zlay0701.github.io/post/2025-08-14-excel-xlookup-demo/</id>
+    <published>2025-08-14T09:34:12.000Z</published>
+    <updated>2026-01-22T02:42:47.133Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Excel中xlookup使用教程(豆包AI)&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Excel" scheme="https://zlay0701.github.io/categories/Excel/"/>
+    
+    
+    <category term="Excel" scheme="https://zlay0701.github.io/tags/Excel/"/>
+    
+    <category term="xlookup" scheme="https://zlay0701.github.io/tags/xlookup/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Joplin笔记webdav同步InfiniCloud设置</title>
+    <link href="https://zlay0701.github.io/post/2025-08-09-joplin-setting/"/>
+    <id>https://zlay0701.github.io/post/2025-08-09-joplin-setting/</id>
+    <published>2025-08-09T06:16:24.000Z</published>
+    <updated>2026-01-22T02:42:47.133Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Joplin笔记webdav同步InfiniCloud设置&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="Joplin" scheme="https://zlay0701.github.io/tags/Joplin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CloudPaste部署</title>
+    <link href="https://zlay0701.github.io/post/2025-08-08-cloudpaste-install/"/>
+    <id>https://zlay0701.github.io/post/2025-08-08-cloudpaste-install/</id>
+    <published>2025-08-08T05:52:52.000Z</published>
+    <updated>2026-01-22T02:42:47.133Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: CloudPaste部署&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="CloudPaste" scheme="https://zlay0701.github.io/tags/CloudPaste/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NVM（Node.js Version Manager）安装</title>
+    <link href="https://zlay0701.github.io/post/2025-07-29-node-version-management-install/"/>
+    <id>https://zlay0701.github.io/post/2025-07-29-node-version-management-install/</id>
+    <published>2025-07-29T07:07:12.000Z</published>
+    <updated>2026-01-22T02:42:47.133Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: NVM（Node.js Version Manager）安装&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="nodejs" scheme="https://zlay0701.github.io/categories/nodejs/"/>
+    
+    
+    <category term="nodejs" scheme="https://zlay0701.github.io/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CloudFlare-ImgBed部署-PicList使用</title>
+    <link href="https://zlay0701.github.io/post/2025-07-28-cloudflare-imgbed-install/"/>
+    <id>https://zlay0701.github.io/post/2025-07-28-cloudflare-imgbed-install/</id>
+    <published>2025-07-28T12:48:26.000Z</published>
+    <updated>2026-01-22T02:42:47.128Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: CloudFlare-ImgBed部署, PicList使用&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="CloudFlare-ImgBed" scheme="https://zlay0701.github.io/tags/CloudFlare-ImgBed/"/>
+    
+    <category term="图床" scheme="https://zlay0701.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Firefox中国账户停止服务,迁移数据到国际账户</title>
+    <link href="https://zlay0701.github.io/post/2025-07-28-firefox-chinese-account-stop-serve/"/>
+    <id>https://zlay0701.github.io/post/2025-07-28-firefox-chinese-account-stop-serve/</id>
+    <published>2025-07-28T07:14:52.000Z</published>
+    <updated>2026-01-22T02:42:47.133Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: &lt;strong&gt;自 2025 年 9 月 29 日晚 24:00 起&lt;/strong&gt;，Firefox 火狐中文官方网站（firefox.com.cn）、Firefox 火狐社区网站（mozilla.com.cn）、Firefox 火狐通行证账户服务（accounts.firefox.com.cn）及 Firefox 火狐主页（home.firefoxchina.cn）将正式停止运营，所有相关功能将终止。Firefox 火狐浏览器将继续作为网页浏览器使用，并保持正常更新。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Firefox" scheme="https://zlay0701.github.io/categories/Firefox/"/>
+    
+    
+    <category term="Firefox" scheme="https://zlay0701.github.io/tags/Firefox/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docusaurus二次魔改增加博客分类</title>
+    <link href="https://zlay0701.github.io/post/2025-07-27-docusaurus-add-categories/"/>
+    <id>https://zlay0701.github.io/post/2025-07-27-docusaurus-add-categories/</id>
+    <published>2025-07-27T09:55:04.000Z</published>
+    <updated>2026-01-22T02:42:47.128Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Docusaurus二次魔改增加博客分类&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Docusaurus" scheme="https://zlay0701.github.io/categories/Docusaurus/"/>
+    
+    
+    <category term="Docusaurus" scheme="https://zlay0701.github.io/tags/Docusaurus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Astro-Fuwari主题配置</title>
+    <link href="https://zlay0701.github.io/post/2025-07-24-astro-fuwari-install/"/>
+    <id>https://zlay0701.github.io/post/2025-07-24-astro-fuwari-install/</id>
+    <published>2025-07-24T01:52:56.000Z</published>
+    <updated>2026-01-22T02:42:47.128Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Astro-Fuwari主题配置&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Astro" scheme="https://zlay0701.github.io/categories/Astro/"/>
+    
+    
+    <category term="Astro" scheme="https://zlay0701.github.io/tags/Astro/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建站工具汇总</title>
+    <link href="https://zlay0701.github.io/post/2025-07-22-website-building-tools/"/>
+    <id>https://zlay0701.github.io/post/2025-07-22-website-building-tools/</id>
+    <published>2025-07-22T05:50:00.000Z</published>
+    <updated>2026-01-22T02:42:47.128Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: 建站工具汇总&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件" scheme="https://zlay0701.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Docusaurus安装指南</title>
+    <link href="https://zlay0701.github.io/post/2025-07-21-docusaurus-install/"/>
+    <id>https://zlay0701.github.io/post/2025-07-21-docusaurus-install/</id>
+    <published>2025-07-21T04:31:11.000Z</published>
+    <updated>2026-01-22T02:42:47.128Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Docusaurus v4安装指南&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Docusaurus" scheme="https://zlay0701.github.io/categories/Docusaurus/"/>
+    
+    
+    <category term="Docusaurus" scheme="https://zlay0701.github.io/tags/Docusaurus/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>安装python和pip以及mkdocs-material</title>
+    <link href="https://zlay0701.github.io/post/2025-07-20-install-python-pip-mkdocs/"/>
+    <id>https://zlay0701.github.io/post/2025-07-20-install-python-pip-mkdocs/</id>
+    <published>2025-07-20T05:18:48.000Z</published>
+    <updated>2026-01-22T02:42:47.127Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: MkDocs 已停止更新，Zensical 是官方推荐的新一代；安装python和pip以及mkdocs-material&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="mkdocs" scheme="https://zlay0701.github.io/categories/mkdocs/"/>
+    
+    
+    <category term="mkdocs" scheme="https://zlay0701.github.io/tags/mkdocs/"/>
+    
+    <category term="python" scheme="https://zlay0701.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小米CR660x刷机Padavan</title>
+    <link href="https://zlay0701.github.io/post/2025-07-18-cr660x-shua-ji/"/>
+    <id>https://zlay0701.github.io/post/2025-07-18-cr660x-shua-ji/</id>
+    <published>2025-07-18T04:48:03.000Z</published>
+    <updated>2026-01-22T02:42:47.127Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: 小米CR660x刷机Padavan&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="路由器" scheme="https://zlay0701.github.io/categories/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+    
+    <category term="路由器" scheme="https://zlay0701.github.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github个人主页配置</title>
+    <link href="https://zlay0701.github.io/post/2025-07-16-github-profile-setting/"/>
+    <id>https://zlay0701.github.io/post/2025-07-16-github-profile-setting/</id>
+    <published>2025-07-16T03:59:59.000Z</published>
+    <updated>2026-01-22T02:42:47.127Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: Github个人主页配置&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Github" scheme="https://zlay0701.github.io/categories/Github/"/>
+    
+    
+    <category term="Github" scheme="https://zlay0701.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有道云笔记导出到Markdown</title>
+    <link href="https://zlay0701.github.io/post/2025-07-09-you-dao-yun-bi-ji-import-markdown/"/>
+    <id>https://zlay0701.github.io/post/2025-07-09-you-dao-yun-bi-ji-import-markdown/</id>
+    <published>2025-07-09T12:12:17.000Z</published>
+    <updated>2026-01-22T02:42:47.126Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: 有道云笔记导出到Markdown&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="有道云笔记" scheme="https://zlay0701.github.io/categories/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="有道云笔记" scheme="https://zlay0701.github.io/tags/%E6%9C%89%E9%81%93%E4%BA%91%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo hugo vuepress 文档写法区别</title>
+    <link href="https://zlay0701.github.io/post/2025-07-06-hexo-hugo-vuepress-write-tutorial/"/>
+    <id>https://zlay0701.github.io/post/2025-07-06-hexo-hugo-vuepress-write-tutorial/</id>
+    <published>2025-07-06T05:18:30.000Z</published>
+    <updated>2026-01-22T02:42:47.126Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: hexo hugo vuepress 文档写法区别&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://zlay0701.github.io/tags/Hexo/"/>
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/tags/Hugo/"/>
+    
+    <category term="VuePress" scheme="https://zlay0701.github.io/tags/VuePress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>bootstrapfx编译踩坑指南</title>
+    <link href="https://zlay0701.github.io/post/2025-07-05-bootstrapfx-install/"/>
+    <id>https://zlay0701.github.io/post/2025-07-05-bootstrapfx-install/</id>
+    <published>2025-07-05T04:07:38.000Z</published>
+    <updated>2026-01-22T02:42:47.126Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: bootstrapfx编译踩坑指南&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="javafx" scheme="https://zlay0701.github.io/categories/javafx/"/>
+    
+    
+    <category term="bootstrapfx" scheme="https://zlay0701.github.io/tags/bootstrapfx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VuePress-v2-hope主题上手指南</title>
+    <link href="https://zlay0701.github.io/post/2025-06-24-vuepress2-start/"/>
+    <id>https://zlay0701.github.io/post/2025-06-24-vuepress2-start/</id>
+    <published>2025-06-24T03:37:07.000Z</published>
+    <updated>2026-01-22T02:42:47.126Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: VuePress-v2-hope主题上手指南&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="VuePress" scheme="https://zlay0701.github.io/categories/VuePress/"/>
+    
+    
+    <category term="VuePress" scheme="https://zlay0701.github.io/tags/VuePress/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hugo自定义首页</title>
+    <link href="https://zlay0701.github.io/post/2025-06-23-hugo-change-home-page/"/>
+    <id>https://zlay0701.github.io/post/2025-06-23-hugo-change-home-page/</id>
+    <published>2025-06-23T01:04:37.000Z</published>
+    <updated>2026-01-22T02:42:47.126Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: hugo自定义首页&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/categories/Hugo/"/>
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/tags/Hugo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo迁移hugo解决图片路径问题插件</title>
+    <link href="https://zlay0701.github.io/post/2025-06-22-hexo-to-hugo-fix-img/"/>
+    <id>https://zlay0701.github.io/post/2025-06-22-hexo-to-hugo-fix-img/</id>
+    <published>2025-06-22T08:19:38.000Z</published>
+    <updated>2026-01-22T02:42:47.126Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;摘要: hexo迁移hugo解决图片路径问题插件(通过豆包AI生成)&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/categories/Hugo/"/>
+    
+    
+    <category term="Hugo" scheme="https://zlay0701.github.io/tags/Hugo/"/>
+    
+  </entry>
+  
+</feed>
